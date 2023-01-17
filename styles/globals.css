@@ -18,17 +18,17 @@
   }
 
 .mv_txt {
-    top: 42%;
-    left: 42%;
-
     @apply
     absolute
+    top-1/2 
+    left-1/2 
+    transform -translate-x-1/2 -translate-y-1/2
     flex-col
     items-center
     justify-center
     text-7xl
     font-extrabold
-    text-gray-900
+    text-gray-800
     text-left
   }
 
