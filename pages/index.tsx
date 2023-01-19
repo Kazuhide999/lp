@@ -9,8 +9,8 @@ const Home: NextPage = () => {
             <title>Tairaporomote</title>
         </Head>
         <div>
-            <video className='video'src='/tplp_title_bg.mp4' autoPlay loop muted playsInline></video>
-            <div className="mv_txt">
+            <video className='video filter: grayscale 'src='/lp_title_bg.mp4' autoPlay loop muted playsInline></video>
+            <div className="mv_txt bg-white bg-opacity-50">
                 {/*  */}
                 <p className='p-4'>
                     <span className='p-2'>悩</span>{' '}<span className='p-2'>み</span>{' '}<span className='p-2'>を</span>{' '}<span className='p-2'>、</span>
