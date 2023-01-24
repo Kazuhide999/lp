@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.li_result {
+	margin-left: 1.4em;
+	text-indent: -1.4em;
+}
+
 .body{
     @apply
     bg-blue-900
@@ -74,6 +79,13 @@
     mt-10 
     ml-36 
     mb-20
+}
+
+.list_sub_text{
+    @apply
+    text-sm
+    ml-7 
+    text-gray-600
 }
 
 
