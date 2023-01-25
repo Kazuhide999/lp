@@ -8,13 +8,14 @@
 }
 
 .body{
+    /* background: linear-gradient(125deg, #111827 0%, #111827 50%, #132558 50%, #132558 100%); */
+    background: linear-gradient(125deg, #111827 0%, #111827 50%, #242424 50%, #242424 100%);
     @apply
-    bg-blue-900
     text-gray-900
 }
 
 .video {
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
     @apply
     object-cover
     relative
@@ -54,11 +55,10 @@
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
     @apply
-    max-w-7xl
-    xl:w-full
+    w-full
     h-auto
     mx-auto
-    -mt-20
+    /* -mt-10 */
     flex-col
     text-center
     justify-center
@@ -91,8 +91,8 @@
 
 .containar2-2{
     @apply
-    max-w-7xl
-    xl:w-full
+    pt-10
+    w-full
     h-max
     /* コンテナ中央 */
     mx-auto
@@ -120,10 +120,13 @@
 
 .containar3{
     clip-path: polygon(100% 100%,100% 20%,0% 0%,0% 100%);
+    background-image:
+        linear-gradient(109.6deg, rgba(255, 255, 255, 0.85) 50%, rgba(129, 129, 129, 0.1) 70%),
+        url(/section3.jpg);
+    background-position: left;
 
     @apply
-    max-w-7xl
-    xl:w-full
+    w-full
     h-max
     /* コンテナ中央 */
     mx-auto
@@ -152,25 +155,24 @@
 
 .btn1{
     @apply
-    ml-auto
-    rounded-md
-    mt-10 
+    mx-auto
+    rounded-lg
+    mt-20
     px-10 
     py-1 
     text-lg
     text-center 
     font-semibold
     outline 
-    outline-offset-2
     text-white
-    bg-blue-900
-    hover:bg-blue-500
+    bg-gray-900
+    hover:bg-blue-900
 }
 
 
 .btn2{
     @apply
-    rounded-md 
+    rounded-lg
     px-20 
     py-1 
     mt-10
@@ -188,8 +190,7 @@
     flex-wrap
     items-center 
     justify-center
-    max-w-7xl 
-    xl:w-full 
+    w-full 
     px-2
     mt-10
 }
@@ -201,10 +202,17 @@
     flex-wrap-reverse
     items-center 
     justify-center 
-    max-w-7xl 
-    xl:w-full 
+    w-full 
     px-2
 
+}
+
+.flow_step{
+    @apply
+    bg-white 
+    shadow-lg 
+    p-2 
+    rounded-md
 }
 
 .flow_area {
@@ -230,8 +238,8 @@
     w-full 
     items-center 
     justify-center 
-    mt-14
-    bg-gray-900
+    mt-5
+    bg-black
 }
 
 .accordion{
@@ -241,14 +249,15 @@
     justify-center 
     mx-auto 
     max-w-7xl 
-    xl:w-full 
+    w-full 
     py-2
 }
 
 .accordion_details{
     @apply
-    bg-white 
-    hover:outline outline-offset-2 outline-blue-500
+    bg-gray-100
+    rounded-lg
+    hover:outline outline-offset-2 outline-blue-800
 }
 
 .accordion_summary{
@@ -257,7 +266,7 @@
     py-3 
     text-xl 
     font-bold 
-    hover:text-blue-500
+    hover:text-blue-900
 }
 
 details[open] .details-content {

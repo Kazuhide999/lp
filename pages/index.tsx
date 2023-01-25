@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { Z_FULL_FLUSH } from 'zlib';
 
 const Home: NextPage = () => {
     return (
@@ -10,26 +11,7 @@ const Home: NextPage = () => {
         </Head>
         <div>
             <video className='video filter: grayscale 'src='/lp_title_bg.mp4' autoPlay loop muted playsInline></video>
-            {/* <div className="mv_txt bg-white bg-opacity-50">
-                <p className='p-4'>
-                    <span className='p-2'>現場</span>{' '}<span className='p-2'>は</span>{' '}<span className='p-2'>、</span>
-                </p>
-                <p className='p-4'>
-                    <span className='p-2'>も</span>{' '}<span className='p-2'>っ</span>{' '}<span className='p-2'>と</span>{' '}<span className='p-2'>、</span>
-                </p>
-                <p className='p-4'>
-                    <span className='p-2'>ラク</span>{' '}<span className='p-2'>になる</span>{' '}<span className='p-2'>。</span>
-                </p>
-            </div> */}
             <div className="mv_txt bg-white bg-opacity-50">
-                <p className='p-4'>
-                    <span className='p-2'>あなたの</span>{' '}<span className='p-2'>技</span>{' '}<span className='p-2'>を</span>{' '}<span className='p-2'>、</span>
-                </p>
-                <p className='p-4'>
-                    <span className='p-2'>みんなの</span>{' '}<span className='p-2'>ワザ</span>{' '}<span className='p-2'>に</span>{' '}<span className='p-2'>。</span>
-                </p>
-            </div>
-            {/* <div className="mv_txt bg-white bg-opacity-50">
                 <p className='p-4'>
                     <span className='p-2'>悩</span>{' '}<span className='p-2'>み</span>{' '}<span className='p-2'>を</span>{' '}<span className='p-2'>、</span>
                 </p>
@@ -39,47 +21,30 @@ const Home: NextPage = () => {
                 <p className='p-4'>
                     <span className='p-2'>解</span>{' '}<span className='p-2'>決</span>{' '}<span className='p-2'>へ</span>{' '}<span className='p-2'>。</span>
                 </p>
-            </div> */}
+            </div>
+            <div className='animate-bounce absolute left-1/2 bottom-5'>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 mx-auto mt-20 stroke-red-600">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                </svg>
+                <p className='text-xl font-bold text-red-600'>Scroll</p>
+            </div>
         </div>
         <div className="containar1">
             <div className="title">
                 <p>
-                    こんなお悩みありませんか？
+                    <span className='text-red-500'>伴走型</span>-課題解決 SERVICE
                 </p>
             </div>
-            <div className='containar1_list'>
-                <li className='mt-5 flex items-center space-x-3'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-3 stroke-orange-700">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
-                    </svg>
-                    製造現場の帳票類が紙なので運用が大変。情報共有ももっと便利にしたい…。
-                </li>
-                <li className='mt-5 flex items-center space-x-3'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-3 stroke-orange-700">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
-                    </svg>
-                    数年の間、教育資料が変わっておらず、適切な教育がしづらい状態にある…。
-                </li>
-                <li className='mt-5 flex items-center space-x-3'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-3 stroke-orange-700">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
-                    </svg>
-                    メンテナンス現場での情報検索が大変、サービスマンの仕事をもっとラクにしたい…。
-                </li>
-                <li className='mt-5 flex items-center space-x-3'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-3 stroke-orange-700">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
-                    </svg>
-                    紙ベースのマニュアルで、情報共有、マニュアル更新が非効率…。
-                </li>                
+            <div>
+                <Image src='/tp_logo.png' alt="service" width={270} height={270}/>
             </div>
         </div>
-        <div className="cont2_title">
-            <p>
-                <span className='text-orange-600'>T</span>aira{' '}Promote{' '}<span className='text-3xl'>なら</span>
-            </p>
-        </div>
-        <div className="containar2-2 py-6">      
+        <div className="containar2-2 py-6">
+            <div className="cont2_title">
+                <p>
+                    Taira{' '}Promote{' '}<span className='text-4xl'>が</span>{" "}解決してきた{" "}<span className='text-red-500'>お悩み</span>
+                </p>
+            </div>    
             {/*accordion 1*/}
             <div className="accordion">
                 <details className="accordion_details">
@@ -90,7 +55,7 @@ const Home: NextPage = () => {
                         <div className="flow_l details-content">
                             <Image src='/step_icon_01.png' alt="problem" width={270} height={270}/>
                             <div className="flow_area pl-2">
-                                <div className="bg-gray-100 shadow-lg">
+                                <div className="flow_step">
                                     <p className="flow_title">
                                         STEP.1<span className="ml-3">現状把握</span>
                                     </p>
@@ -123,7 +88,7 @@ const Home: NextPage = () => {
                         {/* flow2 */}
                         <div className="flow_r details-content">
                             <div className="flow_area pr-2">
-                                <div className="bg-gray-100 shadow-lg">
+                                <div className="flow_step">
                                     <p className="flow_title">
                                         STEP.2<span className="ml-3">解決策の企画・提案</span>
                                     </p>
@@ -150,7 +115,7 @@ const Home: NextPage = () => {
                         <div className="flow_l details-content">
                             <Image src='/step_icon_03.png' alt="problem" width={270} height={270}/>
                             <div className="flow_area pl-2">
-                                <div className="bg-gray-100 shadow-lg">
+                                <div className="flow_step">
                                     <p className="flow_title">
                                         STEP.3<span className="ml-3">運用体制の構築</span>
                                     </p>
@@ -212,7 +177,7 @@ const Home: NextPage = () => {
                         <div className="flow_l details-content">
                             <Image src='/step_icon_01.png' alt="problem" width={270} height={270}/>
                             <div className="flow_area pl-2">
-                                <div className="bg-gray-100 shadow-lg">
+                                <div className="flow_step">
                                     <p className="flow_title">
                                         STEP.1<span className="ml-3">現状把握</span>
                                     </p>
@@ -240,7 +205,7 @@ const Home: NextPage = () => {
                         {/* flow2 */}
                         <div className="flow_r details-content">
                             <div className="flow_area pr-2">
-                                <div className="bg-gray-100 shadow-lg">
+                                <div className="flow_step">
                                     <p className="flow_title">
                                         STEP.2<span className="ml-3">解決策の企画・提案</span>
                                     </p>
@@ -269,7 +234,7 @@ const Home: NextPage = () => {
                         <div className="flow_l details-content">
                             <Image src='/step_icon_03.png' alt="problem" width={270} height={270}/>
                             <div className="flow_area pl-2">
-                                <div className="bg-gray-100 shadow-lg">
+                                <div className="flow_step">
                                     <p className="flow_title">
                                         STEP.3<span className="ml-3">運用体制の構築</span>
                                     </p>
@@ -326,7 +291,7 @@ const Home: NextPage = () => {
                         <div className="flow_l details-content">
                             <Image src='/step_icon_01.png' alt="problem" width={270} height={270}/>
                             <div className="flow_area pl-2">
-                                <div className="bg-gray-100 shadow-lg">
+                                <div className="flow_step">
                                     <p className="flow_title">
                                         STEP.1<span className="ml-3">現状把握</span>
                                     </p>
@@ -352,7 +317,7 @@ const Home: NextPage = () => {
                         {/* flow2 */}
                         <div className="flow_r details-content">
                             <div className="flow_area pr-2">
-                                <div className="bg-gray-100 shadow-lg">
+                                <div className="flow_step">
                                     <p className="flow_title">
                                         STEP.2<span className="ml-3">解決策の企画・提案</span>
                                     </p>
@@ -379,7 +344,7 @@ const Home: NextPage = () => {
                         <div className="flow_l details-content">
                             <Image src='/step_icon_03.png' alt="problem" width={270} height={270}/>
                             <div className="flow_area pl-2">
-                                <div className="bg-gray-100 shadow-lg">
+                                <div className="flow_step">
                                     <p className="flow_title">
                                         STEP.3<span className="ml-3">運用体制の構築</span>
                                     </p>
@@ -436,7 +401,7 @@ const Home: NextPage = () => {
                         <div className="flow_l details-content">
                             <Image src='/step_icon_01.png' alt="problem" width={270} height={270}/>
                             <div className="flow_area pl-2">
-                                <div className="bg-gray-100 shadow-lg">
+                                <div className="flow_step">
                                     <p className="flow_title">
                                         STEP.1<span className="ml-3">現状把握</span>
                                     </p>
@@ -465,7 +430,7 @@ const Home: NextPage = () => {
                         {/* flow2 */}
                         <div className="flow_r details-content">
                             <div className="flow_area pr-2">
-                                <div className="bg-gray-100 shadow-lg">
+                                <div className="flow_step">
                                     <p className="flow_title">
                                         STEP.2<span className="ml-3">解決策の企画・提案</span>
                                     </p>
@@ -496,7 +461,7 @@ const Home: NextPage = () => {
                         <div className="flow_l details-content">
                             <Image src='/step_icon_03.png' alt="problem" width={270} height={270}/>
                             <div className="flow_area pl-2">
-                                <div className="bg-gray-100 shadow-lg">
+                                <div className="flow_step">
                                     <p className="flow_title">
                                         STEP.3<span className="ml-3">運用体制の構築</span>
                                     </p>
@@ -545,17 +510,17 @@ const Home: NextPage = () => {
                             <Image src='/step_icon_04.png' alt="problem" width={200} height={200}/>
                         </div>      
                 </details>
-            </div>
-            <button type="button" className="btn1">
+                <button type="button" className="btn1">
                     <a href="https://www.tairapromote.co.jp/work.html" target="_blank">
                         <p>
                             Taira{' '}promoteの制作事例
                         </p>
                         <p>
-                            詳しくはこちら
+                            詳しくは、HPへ
                         </p>
                     </a>
-            </button>            
+                </button>            
+            </div>
         </div>
         <div className="containar3">
             <div className='cont3_title'>
@@ -563,16 +528,15 @@ const Home: NextPage = () => {
                     Taira{' '}Promote{' '}を選ぶメリット{' '}<span className="text-base">～創業以来私たちが取り組んできたのは「伝える」ための仕組みづくりです～</span>
                 </p>
             </div>
-            <div className='flex flex-col justify-center items-center max-lg:w-screen px-3 text-xl font-bold'>
-                <div className='text-gray-700 list-disc'>
-
+            <div className='flex max-lg:w-screen px-3 text-xl font-bold'>
+                <div className='text-gray-800 list-disc pt-5'>
                     <li className='mt-5 flex items-center space-x-3'>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="w-10 h-10 mr-3 stroke-red-500">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
                             </svg>
                         </div>
-                        当社では1つのコンテンツ制作をベースに、カタログやWeb 媒体への展開につなげるため、トータルでかかる広告販促費や媒体間で発生するコミュニケーションストレスを最小限にすることが可能です。
+                        実際の作業確認や現物での検討作業を当社スタッフが行うことで、お客様と同じ目線で企画制作にあたります。
                     </li>
                     <li className='mt-5 flex items-center space-x-3'>
                         <div>
@@ -580,7 +544,7 @@ const Home: NextPage = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
                             </svg>
                         </div>
-                        設計データなどのお客様のお持ちのデータを最大限有効に活用します。またデータや資料を頂くだけではなく、実際の作業確認や現物での検討作業を当社スタッフが行うことで、対象物に対する理解を深め、お客様と同じ目線で企画制作にあたります
+                        専門的な知識と技術に精通したスタッフが、お客様の課題に寄り添った解決策をご提案します。
                     </li>
                     <li className='mt-5 flex items-center space-x-3'>
                         <div>
@@ -588,9 +552,11 @@ const Home: NextPage = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
                             </svg>
                         </div>
-                        自動車をはじめとする工業技術に精通したスタッフが多く在席しており、お客様の製品の特性に特化したご提案が可能です。
+                        お客様の発展・成果に貢献すべく、企画・提案・制作・運用のサイクルを伴走いたします。
                     </li>
                 </div>
+            </div>
+            <div className="flex flex-col justify-center items-center pt-5">
                 <button type="button" className="btn2">
                         <a href="/">
                             お問い合わせ
