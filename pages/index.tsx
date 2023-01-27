@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import { Z_FULL_FLUSH } from 'zlib';
+
 
 const Home: NextPage = () => {
     return (
@@ -10,8 +10,8 @@ const Home: NextPage = () => {
             <title>Tairaporomote</title>
         </Head>
         <div>
-            <video className='video filter: grayscale 'src='/lp_title_bg.mp4' autoPlay loop muted playsInline></video>
-            <div className="mv_txt bg-white bg-opacity-50">
+            <video className='video'src='/lp_title_bg.mp4' autoPlay loop muted playsInline></video>
+            <div className="mv_txt">
                 <p className='p-4'>
                     <span className='p-2'>悩</span>{' '}<span className='p-2'>み</span>{' '}<span className='p-2'>を</span>{' '}<span className='p-2'>、</span>
                 </p>
@@ -29,14 +29,30 @@ const Home: NextPage = () => {
                 <p className='text-xl font-bold text-red-600'>Scroll</p>
             </div>
         </div>
-        <div className="containar1">
-            <div className="title">
+        <div className="containar1 flex flex-col">
+            <div className="title bg-white bg-opacity-60 rounded-lg">
                 <p>
-                    <span className='text-red-500'>伴走型</span>-課題解決 SERVICE
+                    <span className='text-blue-800'>伴走型</span>-課題解決 SERVICE
                 </p>
+                <div className="font-semibold mt-5 text-lg">
+                    <p>
+                        「企業課題」を、現状把握・課題形成から解決策・運用方法・定着化まで
+                    </p>
+                    <p>
+                        お客様に寄り添いながら共に考え、「解決」へと導きます。
+                    </p>
+                </div>
             </div>
-            <div>
-                <Image src='/tp_logo.png' alt="service" width={270} height={270}/>
+            <div className='flex items-center max-xl:flex-col mx-auto mt-10 mb-44'>
+                <div>
+                    <Image  className="" src='/課題_2.svg' alt="Task"  width={400} height={400}/>
+                </div>
+                <div className='p-10'>
+                    <Image src='/x.svg' alt="Task" width={50} height={50}/>
+                </div>
+                <div>
+                    <Image src='/伴走型-課題解決_SERVICE.svg' alt="service" width={800} height={500}/>
+                </div>
             </div>
         </div>
         <div className="containar2-2 py-6">
@@ -48,8 +64,11 @@ const Home: NextPage = () => {
             {/*accordion 1*/}
             <div className="accordion">
                 <details className="accordion_details">
-                    <summary className="accordion_summary">
-                        製造現場の帳票類が紙なので運用が大変。情報共有ももっと便利にしたい…。
+                    <summary className="accordion_summary flex">
+                        <Image className='animate-heartbeat mr-2' src='/タッチアイコン.svg' alt="click" width={30} height={30}/>
+                        <p>
+                            製造現場の帳票類が紙なので運用が大変。情報共有ももっと便利にしたい…。
+                        </p>
                     </summary>
                         {/* flow1 */}
                         <div className="flow_l details-content">
@@ -170,8 +189,11 @@ const Home: NextPage = () => {
             {/*accordion 2*/}
             <div className="accordion">
                 <details className="accordion_details">
-                    <summary className="accordion_summary">
-                        数年の間、教育資料が変わっておらず、適切な教育がしづらい状態にある…。
+                    <summary className="accordion_summary flex">
+                        <Image className='animate-heartbeat mr-2' src='/タッチアイコン.svg' alt="click" width={30} height={30}/>
+                        <p>
+                            数年の間、教育資料が変わっておらず、適切な教育がしづらい状態にある…。
+                        </p>
                     </summary>
                         {/* flow1 */}
                         <div className="flow_l details-content">
@@ -284,8 +306,11 @@ const Home: NextPage = () => {
             {/*accordion 3*/}
             <div className="accordion">
                 <details className="accordion_details">
-                    <summary className="accordion_summary">
-                        メンテナンス現場での情報検索が大変、サービスマンの仕事をもっとラクにしたい…。
+                    <summary className="accordion_summary flex">
+                        <Image className='animate-heartbeat mr-2' src='/タッチアイコン.svg' alt="click" width={30} height={30}/>
+                        <p>
+                            メンテナンス現場での情報検索が大変、サービスマンの仕事をもっとラクにしたい…。
+                        </p>
                     </summary>
                         {/* flow1 */}
                         <div className="flow_l details-content">
@@ -394,8 +419,11 @@ const Home: NextPage = () => {
             {/*accordion 4*/}
             <div className="accordion">
                 <details className="accordion_details">
-                    <summary className="accordion_summary">
-                        紙ベースのマニュアルで、情報共有、マニュアル更新が非効率…。
+                    <summary className="accordion_summary flex">
+                        <Image className='animate-heartbeat mr-2' src='/タッチアイコン.svg' alt="click" width={30} height={30}/>
+                        <p>
+                            紙ベースのマニュアルで、情報共有、マニュアル更新が非効率…。
+                        </p>
                     </summary>
                         {/* flow1 */}
                         <div className="flow_l details-content">
