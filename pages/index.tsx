@@ -96,9 +96,9 @@ const Home: NextPage = () => {
                             >
                                 {/* flow1 */}                                
                                 <SplideSlide>
-                                <div className="flow_l details-content">
+                                <div className="flow">
                                     <Image src='/step_icon_01.png' alt="problem" width={270} height={270}/>
-                                    <div className="flow_area pl-2">
+                                    <div className="flow_area">
                                         <div className="flow_step">
                                             <p className="flow_title">
                                                 STEP.1<span className="ml-3">現状把握</span>
@@ -107,24 +107,39 @@ const Home: NextPage = () => {
                                                 現状の問題点を把握して、改善すべき課題をお客様に寄り添いながら共に考えます。
                                             </p>
                                         </div>
-                                        <div>
-                                            <p className="flow_title">
-                                                <span className="text-red-500 p-3">課題</span>
+                                        <div className='mx-10'>
+                                            <p className="flow_title mt-3">
+                                                <span className="text-red-500">課題</span>
                                             </p>    
-                                            <div className="font-medium">
-                                                <li>
-                                                    工場の製造にかかわる手順書、帳票が多すぎて煩雑
-                                                    <p><span className="list_sub_text">フォーマットがバラバラで管理者もマチマチ。</span></p>
-                                                    <p><span className="list_sub_text">誰に聞けばいいのかもわからない。</span></p>
-                                                </li>
-                                                <li className="mt-2">
-                                                    製造にかかわる情報の一元化
-                                                    <p><span className="list_sub_text">製造現場から報告書のある場所に行って手書き、</span></p>
-                                                    <p><span className="list_sub_text">またそれを作業後、持ち帰り上司に報告と、時間のロスも大きい</span></p>
-                                                </li>
-                                                <li className="mt-2">
-                                                    情報共有と効率化
-                                                </li>
+                                            <div className="mt-2">
+                                                <div className='flow_sub_title'>
+                                                    <p>
+                                                        工場の製造にかかわる手順書、帳票が多すぎて煩雑
+                                                    </p>
+                                                </div>
+                                                <div className='flow_sub_text'>
+                                                    <p>
+                                                        フォーマットがバラバラで管理者もマチマチ。
+                                                    </p>
+                                                    <p>
+                                                        誰に聞けばいいのかもわからない。
+                                                    </p>
+                                                </div>
+                                                <div className='flow_sub_title mt-2'>
+                                                    <p>
+                                                        製造にかかわる情報の一元化
+                                                    </p>
+                                                </div>
+                                                <div className='flow_sub_text'>
+                                                    <p>
+                                                        製造現場から報告書のある場所に行って手書き、またそれを作業後、持ち帰り上司に報告と、時間のロスも大きく非効率である。
+                                                    </p>
+                                                </div>
+                                                <div className='flow_sub_title mt-2'>        
+                                                    <p>
+                                                        情報共有と効率化 
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>                               
                                     </div>
@@ -132,37 +147,50 @@ const Home: NextPage = () => {
                                 </SplideSlide>
                                 {/* flow2 */}
                                 <SplideSlide>
-                                <div className="flow_r details-content">
-                                    <div className="flow_area pr-2">
+                                <div className="flow">    
+                                <Image src='/step_icon_02.png' alt="problem" width={270} height={270}/>
+                                <div className="flow_area">
                                         <div className="flow_step">
                                             <p className="flow_title">
                                                 STEP.2<span className="ml-3">解決策の企画・提案</span>
                                             </p>
                                             <p>
                                                 課題に対し、費用対効果を考慮しながら、最適な解決策を企画・提案いたします。
-                                                Taira{' '}promoteは、専門性の高いスタッフが多く在籍しています。最新のデジタル技術を活用し課題を解決いたします。
+                                            </p>
+                                            <p>    
+                                                Taira{' '}promoteは、専門性の高いスタッフが多く在籍しています。
+                                            </p>
+                                            <p>    
+                                                最新のデジタル技術を活用し課題を解決いたします。
                                             </p>
                                         </div>
-                                        <div>
-                                            <p className="flow_title">
-                                                <span className="text-red-500 p-3">企画・提案</span>
+                                        <div className='mx-10'>
+                                            <p className="flow_title mt-3">
+                                                <span className="text-red-500">企画・提案</span>
                                             </p>
                                             <div>
-                                                <p className="font-medium">
-                                                お客様の製造現場の声を我々が聞きあげた結果、作業マニュアルにそのまま作業結果や不具合情報を記入して報告できれば、
-                                                非常に効率がいいということを掌握。それらの課題すべてを盛り込んだマニュアルアプリを提案。
+                                                <p className="flow_sub_title mt-2">
+                                                    お客様の製造現場の声を我々が聞きあげた結果、作業マニュアルに、
+                                                </p>
+                                                <p className="flow_sub_title">
+                                                    そのまま作業結果や不具合情報を記入して報告できれば、
+                                                </p>
+                                                <p className="flow_sub_title">
+                                                    非常に効率がいいということを掌握。それらの課題すべてを盛り込んだ、
+                                                </p>
+                                                <p className="flow_sub_title">
+                                                    マニュアルアプリをご提案。
                                                 </p>
                                             </div>
                                         </div>    
                                     </div>
-                                    <Image src='/step_icon_02.png' alt="problem" width={270} height={270}/>
                                 </div>
                                 </SplideSlide>
                                 {/* flow3 */}
                                 <SplideSlide>
-                                <div className="flow_l details-content">
+                                <div className="flow">
                                     <Image src='/step_icon_03.png' alt="problem" width={270} height={270}/>
-                                    <div className="flow_area pl-2">
+                                    <div className="flow_area">
                                         <div className="flow_step">
                                             <p className="flow_title">
                                                 STEP.3<span className="ml-3">運用体制の構築</span>
@@ -172,14 +200,14 @@ const Home: NextPage = () => {
                                                 運用～定着化、成果に応じたブラッシュアップをサポートいたします。
                                             </p>
                                         </div>
-                                        <div>
-                                            <p className="flow_title">
-                                                <span className="text-red-500 p-3">サポート</span>
+                                        <div className='mx-10'>
+                                            <p className="flow_title mt-3">
+                                                <span className="text-red-500">サポート</span>
                                             </p>    
-                                            <div className="font-medium">
+                                            <div className="flow_sub_title">
                                                 <p>
                                                     お客様がを運用するスタイルを、お客様の状況に応じて提案することができます。
-                                                    例えば当社はプラットフォームだけ提供し、お客様が内容を入力して運用するケースから、
+                                                    例えば、当社はプラットフォームだけ提供し、お客様が内容を入力して運用するケースから、
                                                     当社が内容の入力も行い、運用のレクチャーまで行うなど自在に対応できます。
                                                 </p>
                                             </div>
@@ -189,33 +217,46 @@ const Home: NextPage = () => {
                                 </SplideSlide>
                                 {/* flow4 */}
                                 <SplideSlide>
-                                <div className="flow_r details-content mb-10">
-                                    <div className="flow_area pr-2">
-                                        <div>
-                                            <p className="flow_title">
+                                <div className="flow">
+                                    <Image className='mt-16' src='/step_icon_04.png' alt="problem" width={150} height={150}/>
+                                    <div className="flow_area">
+                                        <div className='mx-10'>
+                                            <p className="flow_title mt-5">
                                                 <span className="text-red-500">効果</span>
                                             </p>
-                                            <div className='font-medium mt-2 li_result'>
-                                                <li>
-                                                    帳票を物理的に回覧する必要がなくなり、上長チェックなどもオンライン化したことにより、作業効率が向上しました
-                                                </li>
-                                                <li className="mt-2">
-                                                    報告書のデータベース化により、自動作成が可能になりました。また検索性も向上しました
-                                                </li>
-                                                <li className="mt-2">
-                                                    作業時間等のログも管理できるようになり、新人教育にも活用することができました
-                                                </li>
+                                            <div className='flow_4_text'>
+                                                <p>
+                                                    帳票を物理的に回覧する必要がなくなり、上長チェックなども
+                                                </p>
+                                                <p>
+                                                    オンライン化したことにより、作業効率が向上しました。
+                                                </p>
                                             </div>
+                                            <div className='flow_4_text'>
+                                                <p>
+                                                    報告書のデータベース化により、自動作成が可能になりました。
+                                                </p>
+                                                <p>
+                                                    また、検索性も向上しました。
+                                                </p>
+                                            </div>
+                                            <div className='flow_4_text'>
+                                                <p>
+                                                    作業時間等のログも管理できるようになり、新人教育にも
+                                                </p>
+                                                <p>
+                                                    活用することができました。
+                                                </p>
+                                            </div>                                                    
                                         </div>    
                                     </div>
-                                    <Image src='/step_icon_04.png' alt="problem" width={200} height={200}/>
                                 </div>  
                                 </SplideSlide>
                             </Splide>
                             {/*footer*/}
                             <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
                                 <button className="btn4" type="button" onClick={() => setShowModal_1(false)}>
-                                    Close
+                                    閉じる
                                 </button>
                             </div>
                         </div>
@@ -251,9 +292,9 @@ const Home: NextPage = () => {
                             >
                                 {/* flow1 */}                                
                                 <SplideSlide>
-                                <div className="flow_l details-content">
+                                <div className="flow">
                                     <Image src='/step_icon_01.png' alt="problem" width={270} height={270}/>
-                                    <div className="flow_area pl-2">
+                                    <div className="flow_area">
                                         <div className="flow_step">
                                             <p className="flow_title">
                                                 STEP.1<span className="ml-3">現状把握</span>
@@ -262,19 +303,31 @@ const Home: NextPage = () => {
                                                 現状の問題点を把握して、改善すべき課題をお客様に寄り添いながら共に考えます。
                                             </p>
                                         </div>
-                                        <div>
-                                            <p className="flow_title">
-                                                <span className="text-red-500 p-3">課題</span>
+                                        <div className='mx-10'>
+                                            <p className="flow_title mt-3">
+                                                <span className="text-red-500">課題</span>
                                             </p>    
-                                            <div className="font-medium">
-                                                <li>
-                                                    講師の手間を削減
-                                                    <p><span className="list_sub_text">講師が変わるたびに、それぞれがマニュアルを作って補足している。</span></p>
-                                                </li>
-                                                <li>
-                                                    受講者の理解度を向上
-                                                    <p><span className="list_sub_text">講師によって受講者の理解度が変わってしまう。</span></p>
-                                                </li>
+                                            <div className="mt-2">
+                                                <div className='flow_sub_title'>
+                                                    <p>
+                                                        講師の手間を削減。
+                                                    </p>
+                                                </div>
+                                                <div className='flow_sub_text'>
+                                                    <p>
+                                                        講師が変わるたびに、それぞれがマニュアルを作って補足している。
+                                                    </p>
+                                                </div>
+                                                <div className='flow_sub_title'>
+                                                    <p>
+                                                        受講者の理解度を向上。
+                                                    </p>
+                                                </div>
+                                                <div className='flow_sub_text'>                                                
+                                                    <p>
+                                                        講師によって受講者の理解度が変わってしまう。
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>                               
                                     </div>
@@ -282,39 +335,44 @@ const Home: NextPage = () => {
                                 </SplideSlide>
                                 {/* flow2 */}
                                 <SplideSlide>
-                                <div className="flow_r details-content">
-                                    <div className="flow_area pr-2">
+                                <div className="flow">    
+                                <Image src='/step_icon_02.png' alt="problem" width={270} height={270}/>
+                                <div className="flow_area">
                                         <div className="flow_step">
                                             <p className="flow_title">
                                                 STEP.2<span className="ml-3">解決策の企画・提案</span>
                                             </p>
                                             <p>
                                                 課題に対し、費用対効果を考慮しながら、最適な解決策を企画・提案いたします。
-                                                Taira{' '}promoteは、専門性の高いスタッフが多く在籍しており、最新のデジタル技術を活用し課題を解決いたします。
+                                            </p>
+                                            <p>    
+                                                Taira{' '}promoteは、専門性の高いスタッフが多く在籍しています。
+                                            </p>
+                                            <p>    
+                                                最新のデジタル技術を活用し課題を解決いたします。
                                             </p>
                                         </div>
-                                        <div>
-                                            <p className="flow_title">
-                                                <span className="text-red-500 p-3">企画・提案</span>
+                                        <div className='mx-10'>
+                                            <p className="flow_title mt-3">
+                                                <span className="text-red-500">企画・提案</span>
                                             </p>
-                                            <div className="font-medium li_result">
-                                                <li>
-                                                    閲覧性を向上するため、デザインフォーマットおよび文書構成を最適化を行う
-                                                </li>
-                                                <li>
+                                            <div>
+                                                <p className="flow_sub_title mt-2">
+                                                    閲覧性を向上するため、デザインフォーマットおよび文書構成を最適化を行う。
+                                                </p>
+                                                <p className="flow_sub_title mt-2">
                                                     理解度を向上するため、文章のリライトおよびビジュアル素材を設計図面からイラストへアップデート
-                                                </li>
+                                                </p>
                                             </div>
                                         </div>    
                                     </div>
-                                    <Image src='/step_icon_02.png' alt="problem" width={270} height={270}/>
                                 </div>
                                 </SplideSlide>
                                 {/* flow3 */}
                                 <SplideSlide>
-                                <div className="flow_l details-content">
+                                <div className="flow">
                                     <Image src='/step_icon_03.png' alt="problem" width={270} height={270}/>
-                                    <div className="flow_area pl-2">
+                                    <div className="flow_area">
                                         <div className="flow_step">
                                             <p className="flow_title">
                                                 STEP.3<span className="ml-3">運用体制の構築</span>
@@ -324,11 +382,11 @@ const Home: NextPage = () => {
                                                 運用～定着化、成果に応じたブラッシュアップをサポートいたします。
                                             </p>
                                         </div>
-                                        <div>
-                                            <p className="flow_title">
-                                                <span className="text-red-500 p-3">サポート</span>
+                                        <div className='mx-10'>
+                                            <p className="flow_title mt-3">
+                                                <span className="text-red-500">サポート</span>
                                             </p>    
-                                            <div className="font-medium">
+                                            <div className="flow_sub_title">
                                                 <p>
                                                     講習資料の微修正は講師が対応し、大規模な修正は当社が受け持つことで随時ブラッシュアップを実施しています。
                                                 </p>
@@ -339,30 +397,32 @@ const Home: NextPage = () => {
                                 </SplideSlide>
                                 {/* flow4 */}
                                 <SplideSlide>
-                                <div className="flow_r details-content mb-10">
-                                    <div className="flow_area pr-2">
-                                        <div>
-                                            <p className="flow_title">
+                                <div className="flow">
+                                    <Image className='mt-16' src='/step_icon_04.png' alt="problem" width={150} height={150}/>
+                                    <div className="flow_area">
+                                        <div className='mx-10'>
+                                            <p className="flow_title mt-5">
                                                 <span className="text-red-500">効果</span>
                                             </p>
-                                            <div className='font-medium mt-2 li_result'>
-                                                <li>
-                                                    均質な指導が可能になり、受講者の理解度向上しました
-                                                </li>
-                                                <li className="mt-2">
-                                                    講師の講習準備の時間を8割削減しました
-                                                </li>
+                                            <div className='flow_4_text'>
+                                                <p>
+                                                    均質な指導が可能になり、受講者の理解度向上しました。
+                                                </p>
                                             </div>
+                                            <div className='flow_4_text'>
+                                                <p>
+                                                    講師の講習準備の時間を8割削減しました。
+                                                </p>
+                                            </div>                                                    
                                         </div>    
                                     </div>
-                                    <Image src='/step_icon_04.png' alt="problem" width={200} height={200}/>
-                                </div>    
+                                </div>  
                                 </SplideSlide>
                             </Splide>
                             {/*footer*/}
                             <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
                                 <button className="btn4" type="button" onClick={() => setShowModal_2(false)}>
-                                    Close
+                                    閉じる
                                 </button>
                             </div>
                         </div>
@@ -398,9 +458,9 @@ const Home: NextPage = () => {
                             >
                                 {/* flow1 */}                                
                                 <SplideSlide>
-                                <div className="flow_l details-content">
+                                <div className="flow">
                                     <Image src='/step_icon_01.png' alt="problem" width={270} height={270}/>
-                                    <div className="flow_area pl-2">
+                                    <div className="flow_area">
                                         <div className="flow_step">
                                             <p className="flow_title">
                                                 STEP.1<span className="ml-3">現状把握</span>
@@ -409,17 +469,27 @@ const Home: NextPage = () => {
                                                 現状の問題点を把握して、改善すべき課題をお客様に寄り添いながら共に考えます。
                                             </p>
                                         </div>
-                                        <div>
-                                            <p className="flow_title">
-                                                <span className="text-red-500 p-3">課題</span>
+                                        <div className='mx-10'>
+                                            <p className="flow_title mt-3">
+                                                <span className="text-red-500">課題</span>
                                             </p>    
-                                            <div className="font-medium">
-                                                <li>
-                                                    サービスマンの出張修理時の負担を軽減したい
-                                                    <p><span className="list_sub_text">故障アラートからサービスマンが携帯した紙図面を見て、</span></p>
-                                                    <p><span className="list_sub_text">失陥部位を特定し、目視で辿って失陥箇所を特定していく。</span></p>
-                                                    <p><span className="list_sub_text">この手間を軽減したい。</span></p>
-                                                </li>
+                                            <div className="mt-2">
+                                                <div className='flow_sub_title'>
+                                                    <p>
+                                                        サービスマンの出張修理時の負担を軽減したい。
+                                                    </p>
+                                                </div>
+                                                <div className='flow_sub_text'>
+                                                    <p>
+                                                        故障アラートからサービスマンが携帯した紙図面を見て、
+                                                    </p>
+                                                    <p>
+                                                        失陥部位を特定し、目視で辿って失陥箇所を特定していく。
+                                                    </p>
+                                                    <p>
+                                                        この手間を軽減したい。
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>                               
                                     </div>
@@ -427,37 +497,42 @@ const Home: NextPage = () => {
                                 </SplideSlide>
                                 {/* flow2 */}
                                 <SplideSlide>
-                                <div className="flow_r details-content">
-                                    <div className="flow_area pr-2">
+                                <div className="flow">    
+                                <Image src='/step_icon_02.png' alt="problem" width={270} height={270}/>
+                                <div className="flow_area">
                                         <div className="flow_step">
                                             <p className="flow_title">
                                                 STEP.2<span className="ml-3">解決策の企画・提案</span>
                                             </p>
                                             <p>
                                                 課題に対し、費用対効果を考慮しながら、最適な解決策を企画・提案いたします。
-                                                Taira{' '}promoteは、専門性の高いスタッフが多く在籍しており、最新のデジタル技術を活用し課題を解決いたします。
+                                            </p>
+                                            <p>    
+                                                Taira{' '}promoteは、専門性の高いスタッフが多く在籍しています。
+                                            </p>
+                                            <p>    
+                                                最新のデジタル技術を活用し課題を解決いたします。
                                             </p>
                                         </div>
-                                        <div>
-                                            <p className="flow_title">
-                                                <span className="text-red-500 p-3">企画・提案</span>
+                                        <div className='mx-10'>
+                                            <p className="flow_title mt-3">
+                                                <span className="text-red-500">企画・提案</span>
                                             </p>
                                             <div>
-                                                <p className="font-medium">
+                                                <p className="flow_sub_title mt-2">
                                                     サービスマンが使用している故障診断ツールに連動して、故障発生時にその点検箇所を一目で探し当てられるように3Dで表示する。
                                                     またその3Dモデルは設計データから生成する。
                                                 </p>
                                             </div>
                                         </div>    
                                     </div>
-                                    <Image src='/step_icon_02.png' alt="problem" width={270} height={270}/>
                                 </div>
                                 </SplideSlide>
                                 {/* flow3 */}
                                 <SplideSlide>
-                                <div className="flow_l details-content">
+                                <div className="flow">
                                     <Image src='/step_icon_03.png' alt="problem" width={270} height={270}/>
-                                    <div className="flow_area pl-2">
+                                    <div className="flow_area">
                                         <div className="flow_step">
                                             <p className="flow_title">
                                                 STEP.3<span className="ml-3">運用体制の構築</span>
@@ -467,13 +542,13 @@ const Home: NextPage = () => {
                                                 運用～定着化、成果に応じたブラッシュアップをサポートいたします。
                                             </p>
                                         </div>
-                                        <div>
-                                            <p className="flow_title">
-                                                <span className="text-red-500 p-3">サポート</span>
+                                        <div className='mx-10'>
+                                            <p className="flow_title mt-3">
+                                                <span className="text-red-500">サポート</span>
                                             </p>    
-                                            <div className="font-medium">
+                                            <div className="flow_sub_title">
                                                 <p>
-                                                    さまざまな機種の故障コード別失陥箇所をお客様の側で入力しやすくするUIと、その作業マニュアルを提供。
+                                                    さまざまな機種の故障コード別失陥箇所をお客様の側で入力しやすくするUIと、その作業マニュアルをご提供。
                                                 </p>
                                             </div>
                                         </div>                               
@@ -482,31 +557,32 @@ const Home: NextPage = () => {
                                 </SplideSlide>
                                 {/* flow4 */}
                                 <SplideSlide>
-
-                                <div className="flow_r details-content mb-10">
-                                    <div className="flow_area pr-2">
-                                        <div>
-                                            <p className="flow_title">
+                                <div className="flow">
+                                    <Image className='mt-16' src='/step_icon_04.png' alt="problem" width={150} height={150}/>
+                                    <div className="flow_area">
+                                        <div className='mx-10'>
+                                            <p className="flow_title mt-5">
                                                 <span className="text-red-500">効果</span>
                                             </p>
-                                            <div className='font-medium mt-2 li_result'>
-                                                <li>
-                                                    サービスマンの現地修理の効率化が図られ、職場環境が向上しました
-                                                </li>
-                                                <li className="mt-2">
-                                                    設計データの有効活用により、3Dモデリング等のアプリ制作費用が低減できました
-                                                </li>
+                                            <div className='flow_4_text'>
+                                                <p>
+                                                    サービスマンの現地修理の効率化が図られ、職場環境が向上しました。
+                                                </p>
                                             </div>
+                                            <div className='flow_4_text'>
+                                                <p>
+                                                    設計データの有効活用により、3Dモデリング等のアプリ制作費用が低減できました。
+                                                </p>
+                                            </div>                                
                                         </div>    
                                     </div>
-                                    <Image src='/step_icon_04.png' alt="problem" width={200} height={200}/>
-                                </div> 
+                                </div>  
                                 </SplideSlide>
                             </Splide>
                             {/*footer*/}
                             <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
                                 <button className="btn4" type="button" onClick={() => setShowModal_3(false)}>
-                                    Close
+                                    閉じる
                                 </button>
                             </div>
                         </div>
@@ -542,9 +618,9 @@ const Home: NextPage = () => {
                             >
                                 {/* flow1 */}                                
                                 <SplideSlide>
-                                <div className="flow_l details-content">
+                                <div className="flow">
                                     <Image src='/step_icon_01.png' alt="problem" width={270} height={270}/>
-                                    <div className="flow_area pl-2">
+                                    <div className="flow_area">
                                         <div className="flow_step">
                                             <p className="flow_title">
                                                 STEP.1<span className="ml-3">現状把握</span>
@@ -553,20 +629,26 @@ const Home: NextPage = () => {
                                                 現状の問題点を把握して、改善すべき課題をお客様に寄り添いながら共に考えます。
                                             </p>
                                         </div>
-                                        <div>
-                                            <p className="flow_title">
-                                                <span className="text-red-500 p-3">課題</span>
+                                        <div className='mx-10'>
+                                            <p className="flow_title mt-3">
+                                                <span className="text-red-500">課題</span>
                                             </p>    
-                                            <div className="font-medium">
-                                                <li>
-                                                    マニュアル更新作業の負担を軽減
-                                                </li>
-                                                <li>
-                                                    更新漏れから生じる顧客満足度の低下を避けたい
-                                                </li>
-                                                <li>
-                                                    検索性を向上してユーザーの業務効率を改善したい
-                                                </li>
+                                            <div className="mt-2">
+                                                <div className='flow_sub_title'>
+                                                    <p>
+                                                        マニュアル更新作業の負担を軽減。
+                                                    </p>
+                                                </div>
+                                                <div className='flow_sub_title'>
+                                                    <p>
+                                                        更新漏れから生じる顧客満足度の低下を避ける。
+                                                    </p>
+                                                </div>
+                                                <div className='flow_sub_title'>
+                                                    <p>
+                                                        検索性を向上してユーザーの業務効率を改善。
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>                               
                                     </div>
@@ -574,41 +656,46 @@ const Home: NextPage = () => {
                                 </SplideSlide>
                                 {/* flow2 */}
                                 <SplideSlide>
-                                <div className="flow_r details-content">
-                                    <div className="flow_area pr-2">
+                                <div className="flow">    
+                                <Image src='/step_icon_02.png' alt="problem" width={270} height={270}/>
+                                <div className="flow_area">
                                         <div className="flow_step">
                                             <p className="flow_title">
                                                 STEP.2<span className="ml-3">解決策の企画・提案</span>
                                             </p>
                                             <p>
                                                 課題に対し、費用対効果を考慮しながら、最適な解決策を企画・提案いたします。
-                                                Taira{' '}promoteは、専門性の高いスタッフが多く在籍しており、最新のデジタル技術を活用し課題を解決いたします。
+                                            </p>
+                                            <p>    
+                                                Taira{' '}promoteは、専門性の高いスタッフが多く在籍しています。
+                                            </p>
+                                            <p>    
+                                                最新のデジタル技術を活用し課題を解決いたします。
                                             </p>
                                         </div>
-                                        <div>
-                                            <p className="flow_title">
-                                                <span className="text-red-500 p-3">企画・提案</span>
+                                        <div className='mx-10'>
+                                            <p className="flow_title mt-3">
+                                                <span className="text-red-500">企画・提案</span>
                                             </p>
-                                            <div className='font-medium li_result'>
-                                                <li>
+                                            <div>
+                                                <p className="flow_sub_title mt-2">
                                                     マニュアルにデジタル技術を活用することによって、瞬時の情報更新を実現。
                                                     ユーザーの業務効率が最適になるよう、情報量や表示フォーマットを業務の実態に合わせてご提案。
-                                                </li>
-                                                <li className="mt-2">
+                                                </p>
+                                                <p className="flow_sub_title mt-2">
                                                     ユーザーの入れ替わりが激しいため、一般的なスキルで操作できるように、Excelやスプレッドシートと同様の編集機能をご提案。
                                                     ユーザー教育が不要な使い勝手の良さを実現する。
-                                                </li>
+                                                </p>
                                             </div>
                                         </div>    
                                     </div>
-                                    <Image src='/step_icon_02.png' alt="problem" width={270} height={270}/>
                                 </div>
                                 </SplideSlide>
                                 {/* flow3 */}
                                 <SplideSlide>
-                                <div className="flow_l details-content">
+                                <div className="flow">
                                     <Image src='/step_icon_03.png' alt="problem" width={270} height={270}/>
-                                    <div className="flow_area pl-2">
+                                    <div className="flow_area">
                                         <div className="flow_step">
                                             <p className="flow_title">
                                                 STEP.3<span className="ml-3">運用体制の構築</span>
@@ -618,13 +705,13 @@ const Home: NextPage = () => {
                                                 運用～定着化、成果に応じたブラッシュアップをサポートいたします。
                                             </p>
                                         </div>
-                                        <div>
-                                            <p className="flow_title">
-                                                <span className="text-red-500 p-3">サポート</span>
+                                        <div className='mx-10'>
+                                            <p className="flow_title mt-3">
+                                                <span className="text-red-500">サポート</span>
                                             </p>    
-                                            <div className="font-medium">
+                                            <div className="flow_sub_title">
                                                 <p>
-                                                    リリース後も定期的なユーザーインタビューを実施し、運用の中で生じた新たな課題には細かなアップデート提案を、実施しています。
+                                                    リース後も定期的なユーザーインタビューを実施し、運用の中で生じた新たな課題には細かなアップデート提案を、実施しています。
                                                 </p>
                                             </div>
                                         </div>                               
@@ -633,33 +720,37 @@ const Home: NextPage = () => {
                                 </SplideSlide>
                                 {/* flow4 */}
                                 <SplideSlide>
-                                <div className="flow_r details-content mb-10">
-                                    <div className="flow_area pr-2">
-                                        <div>
-                                            <p className="flow_title">
+                                <div className="flow">
+                                    <Image className='mt-16' src='/step_icon_04.png' alt="problem" width={150} height={150}/>
+                                    <div className="flow_area">
+                                        <div className='mx-10'>
+                                            <p className="flow_title mt-5">
                                                 <span className="text-red-500">効果</span>
                                             </p>
-                                            <div className='font-medium li_result'>
-                                                <li>
-                                                    更新作業、ユーザー展開の工数を30%削減しました
-                                                </li>
-                                                <li className="mt-2">
-                                                    ユーザーの教育コストを低減しました
-                                                </li>
-                                                <li className="mt-2">
-                                                    ユーザーの業務効率が向上し、顧客対応がスムーズに行えるようになりました
-                                                </li>
+                                            <div className='flow_4_text'>
+                                                <p>
+                                                    更新作業、ユーザー展開の工数を30%削減しました。
+                                                </p>
                                             </div>
+                                            <div className='flow_4_text'>
+                                                <p>
+                                                    ユーザーの教育コストを低減しました。
+                                                </p>
+                                            </div>
+                                            <div className='flow_4_text'>
+                                                <p>
+                                                    ユーザーの業務効率が向上し、顧客対応がスムーズに行えるようになりました。
+                                                </p>
+                                            </div>                    
                                         </div>    
                                     </div>
-                                    <Image src='/step_icon_04.png' alt="problem" width={200} height={200}/>
-                                </div>      
+                                </div>  
                                 </SplideSlide>
                             </Splide>
                             {/*footer*/}
                             <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
                                 <button className="btn4" type="button" onClick={() => setShowModal_4(false)}>
-                                    Close
+                                    閉じる
                                 </button>
                             </div>
                         </div>
@@ -668,6 +759,7 @@ const Home: NextPage = () => {
                 <div className="opacity-50 fixed inset-0 z-40 bg-black"></div>
                 </>
                 ) : null}
+            </div>
             <button type="button" className="btn1">
                 <a href="https://www.tairapromote.co.jp/work.html" target="_blank">
                     <p>
@@ -677,8 +769,224 @@ const Home: NextPage = () => {
                         詳しくは、HPへ
                     </p>
                 </a>
-            </button> 
-            </div>        
+            </button>
+
+
+            <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5">
+                <div className="rounded-lg bg-white shadow-lg w-3/5">
+                <Image className='w-full rounded-t-lg' src='/section1.jpg' alt="test_image" width={300} height={300}/>
+                    <div className="px-6 py-10">
+                            <div className="font-bold text-xl mb-2">
+                                製造現場の帳票類が紙なので運用が大変。情報共有ももっと便利にしたい…。
+                            </div>
+                            {/*modal 1*/}
+                            <button className="btn3 flex mt-5" type="button" onClick={() => setShowModal_1(true)}>
+                                <Image className='animate-heartbeat mr-2' src='/タッチアイコン.svg' alt="click" width={30} height={30}/>
+                                    詳しく知りたい。
+                            </button>
+                            {showModal_1 ? (
+                                <>
+                                <div className="showModal">
+                                    <div className="showModal_content">
+                                        {/*content*/}
+                                        <div className="showModal_detail">
+                                            {/*header*/}
+                                            <div className="showModal_header">
+                                                <h3 className="text-xl font-semibold text-white">
+                                                    製造現場の帳票類が紙なので運用が大変。情報共有ももっと便利にしたい…。
+                                                </h3>
+                                            </div>
+                                            {/*body*/}
+                                            <Splide
+                                                aria-label="flow"
+                                                options={{
+                                                autoplay: 'pause', // 自動再生を有効
+                                                interval: 3000, // 自動再生の間隔を3秒に設定
+                                                }}
+                                            >
+                                                {/* flow1 */}                                
+                                                <SplideSlide>
+                                                <div className="flow">
+                                                    <Image src='/step_icon_01.png' alt="problem" width={270} height={270}/>
+                                                    <div className="flow_area">
+                                                        <div className="flow_step">
+                                                            <p className="flow_title">
+                                                                STEP.1<span className="ml-3">現状把握</span>
+                                                            </p>
+                                                            <p>
+                                                                現状の問題点を把握して、改善すべき課題をお客様に寄り添いながら共に考えます。
+                                                            </p>
+                                                        </div>
+                                                        <div className='mx-10'>
+                                                            <p className="flow_title mt-3">
+                                                                <span className="text-red-500">課題</span>
+                                                            </p>    
+                                                            <div className="mt-2">
+                                                                <div className='flow_sub_title'>
+                                                                    <p>
+                                                                        工場の製造にかかわる手順書、帳票が多すぎて煩雑
+                                                                    </p>
+                                                                </div>
+                                                                <div className='flow_sub_text'>
+                                                                    <p>
+                                                                        フォーマットがバラバラで管理者もマチマチ。
+                                                                    </p>
+                                                                    <p>
+                                                                        誰に聞けばいいのかもわからない。
+                                                                    </p>
+                                                                </div>
+                                                                <div className='flow_sub_title mt-2'>
+                                                                    <p>
+                                                                        製造にかかわる情報の一元化
+                                                                    </p>
+                                                                </div>
+                                                                <div className='flow_sub_text'>
+                                                                    <p>
+                                                                        製造現場から報告書のある場所に行って手書き、またそれを作業後、持ち帰り上司に報告と、時間のロスも大きく非効率である。
+                                                                    </p>
+                                                                </div>
+                                                                <div className='flow_sub_title mt-2'>        
+                                                                    <p>
+                                                                        情報共有と効率化 
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>                               
+                                                    </div>
+                                                </div>
+                                                </SplideSlide>
+                                                {/* flow2 */}
+                                                <SplideSlide>
+                                                <div className="flow">    
+                                                <Image src='/step_icon_02.png' alt="problem" width={270} height={270}/>
+                                                <div className="flow_area">
+                                                        <div className="flow_step">
+                                                            <p className="flow_title">
+                                                                STEP.2<span className="ml-3">解決策の企画・提案</span>
+                                                            </p>
+                                                            <p>
+                                                                課題に対し、費用対効果を考慮しながら、最適な解決策を企画・提案いたします。
+                                                            </p>
+                                                            <p>    
+                                                                Taira{' '}promoteは、専門性の高いスタッフが多く在籍しています。
+                                                            </p>
+                                                            <p>    
+                                                                最新のデジタル技術を活用し課題を解決いたします。
+                                                            </p>
+                                                        </div>
+                                                        <div className='mx-10'>
+                                                            <p className="flow_title mt-3">
+                                                                <span className="text-red-500">企画・提案</span>
+                                                            </p>
+                                                            <div>
+                                                                <p className="flow_sub_title mt-2">
+                                                                    お客様の製造現場の声を我々が聞きあげた結果、作業マニュアルに、
+                                                                </p>
+                                                                <p className="flow_sub_title">
+                                                                    そのまま作業結果や不具合情報を記入して報告できれば、
+                                                                </p>
+                                                                <p className="flow_sub_title">
+                                                                    非常に効率がいいということを掌握。それらの課題すべてを盛り込んだ、
+                                                                </p>
+                                                                <p className="flow_sub_title">
+                                                                    マニュアルアプリをご提案。
+                                                                </p>
+                                                            </div>
+                                                        </div>    
+                                                    </div>
+                                                </div>
+                                                </SplideSlide>
+                                                {/* flow3 */}
+                                                <SplideSlide>
+                                                <div className="flow">
+                                                    <Image src='/step_icon_03.png' alt="problem" width={270} height={270}/>
+                                                    <div className="flow_area">
+                                                        <div className="flow_step">
+                                                            <p className="flow_title">
+                                                                STEP.3<span className="ml-3">運用体制の構築</span>
+                                                            </p>
+                                                            <p>
+                                                                一過性の活動ではなく継続的な変革にすることが重要です。
+                                                                運用～定着化、成果に応じたブラッシュアップをサポートいたします。
+                                                            </p>
+                                                        </div>
+                                                        <div className='mx-10'>
+                                                            <p className="flow_title mt-3">
+                                                                <span className="text-red-500">サポート</span>
+                                                            </p>    
+                                                            <div className="flow_sub_title">
+                                                                <p>
+                                                                    お客様がを運用するスタイルを、お客様の状況に応じて提案することができます。
+                                                                    例えば、当社はプラットフォームだけ提供し、お客様が内容を入力して運用するケースから、
+                                                                    当社が内容の入力も行い、運用のレクチャーまで行うなど自在に対応できます。
+                                                                </p>
+                                                            </div>
+                                                        </div>                               
+                                                    </div>
+                                                </div>
+                                                </SplideSlide>
+                                                {/* flow4 */}
+                                                <SplideSlide>
+                                                <div className="flow">
+                                                    <Image className='mt-16' src='/step_icon_04.png' alt="problem" width={150} height={150}/>
+                                                    <div className="flow_area">
+                                                        <div className='mx-10'>
+                                                            <p className="flow_title mt-5">
+                                                                <span className="text-red-500">効果</span>
+                                                            </p>
+                                                            <div className='flow_4_text'>
+                                                                <p>
+                                                                    帳票を物理的に回覧する必要がなくなり、上長チェックなども
+                                                                </p>
+                                                                <p>
+                                                                    オンライン化したことにより、作業効率が向上しました。
+                                                                </p>
+                                                            </div>
+                                                            <div className='flow_4_text'>
+                                                                <p>
+                                                                    報告書のデータベース化により、自動作成が可能になりました。
+                                                                </p>
+                                                                <p>
+                                                                    また、検索性も向上しました。
+                                                                </p>
+                                                            </div>
+                                                            <div className='flow_4_text'>
+                                                                <p>
+                                                                    作業時間等のログも管理できるようになり、新人教育にも
+                                                                </p>
+                                                                <p>
+                                                                    活用することができました。
+                                                                </p>
+                                                            </div>                                                    
+                                                        </div>    
+                                                    </div>
+                                                </div>  
+                                                </SplideSlide>
+                                            </Splide>
+                                            {/*footer*/}
+                                            <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+                                                <button className="btn4" type="button" onClick={() => setShowModal_1(false)}>
+                                                    閉じる
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="opacity-50 fixed inset-0 z-40 bg-black"></div>
+                                </>
+                                ) : null}
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
         </div>
         <div className="containar3">
             <div className='cont3_title'>

@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.li_result {
-	margin-left: 1.4em;
-	text-indent: -1.4em;
-}
 
 .body{
     background: linear-gradient(125deg, #111827 0%, #111827 50%, #242424 50%, #242424 100%);
@@ -80,14 +76,6 @@
     mb-20
 }
 
-.list_sub_text{
-    @apply
-    text-sm
-    ml-7 
-    text-gray-600
-}
-
-
 .containar2-2{
     @apply
     pt-10
@@ -150,56 +138,64 @@
     max-xl:text-2xl 
 }
 
-
 /* _____Flow____ */
 
-
-.flow_l{
+.flow{
     @apply
-    flex 
-    flex-wrap
+    flex
+    flex-col
     items-center 
     justify-center
-    w-full 
-    px-2
+    w-full
+    mb-10
     mt-10
-}
-
-.flow_r{
-    @apply
-    mt-10
-    flex 
-    flex-wrap-reverse
-    items-center 
-    justify-center 
-    w-full 
-    px-2
-
 }
 
 .flow_step{
     @apply
     bg-white 
-    shadow-lg 
-    p-2 
-    rounded-md
+    shadow-lg
+    p-2
+    border-l-8 
+    border-blue-900 
 }
 
 .flow_area {
     @apply
-    w-1/2
-    p-3
+    w-4/5
 }
 
 .flow_title{
     @apply
-    flex 
-    items-center
-    h-auto
     text-2xl
-    pt-2
     font-bold
 }
+
+.flow_sub_title{
+    @apply
+    font-extrabold
+    text-base
+}
+
+.flow_sub_text{
+    @apply
+    text-sm
+    mx-1
+    text-gray-700
+}
+
+.flow_4_text{
+    @apply
+    font-extrabold
+    text-base
+    mt-2 
+    bg-white 
+    border-l-8 
+    border-red-900 
+    p-2 
+    shadow-lg
+}
+
 
 /* _____Footer____ */
 
@@ -251,6 +247,7 @@
 .btn3{
     @apply
     rounded-lg
+    shadow-lg
     py-1
     px-3 
     text-xl
@@ -273,6 +270,7 @@
     bg-blue-900
     hover:bg-blue-700
 }
+
 
 /* _____Modal____ */
 
@@ -313,4 +311,6 @@
     w-full 
     bg-gray-100 
 }
+
+/* _____card____ */
 
