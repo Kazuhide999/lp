@@ -98,9 +98,9 @@ const Home: NextPage = () => {
                                 <div className="showModal_detail">
                                     {/*header*/}
                                     <div className="showModal_header">
-                                        <h3 className="text-xl font-semibold text-white">
+                                        <p>
                                             製造現場の帳票類が紙なので運用が大変。情報共有ももっと便利にしたい…。
-                                        </h3>
+                                        </p>
                                     </div>
                                     {/*body*/}
                                     <Splide
@@ -119,7 +119,7 @@ const Home: NextPage = () => {
                                                     <p className="flow_title">
                                                         STEP.1<span className="ml-3">現状把握</span>
                                                     </p>
-                                                    <p>
+                                                    <p className='flow_title_2'>
                                                         現状の問題点を把握して、改善すべき課題をお客様に寄り添いながら共に考えます。
                                                     </p>
                                                 </div>
@@ -170,13 +170,13 @@ const Home: NextPage = () => {
                                                     <p className="flow_title">
                                                         STEP.2<span className="ml-3">解決策の企画・提案</span>
                                                     </p>
-                                                    <p>
+                                                    <p className='flow_title_2'>
                                                         課題に対し、費用対効果を考慮しながら、最適な解決策を企画・提案いたします。
                                                     </p>
-                                                    <p>    
+                                                    <p className='flow_title_2'>    
                                                         Taira{' '}Promoteは、専門性の高いスタッフが多く在籍しています。
                                                     </p>
-                                                    <p>    
+                                                    <p className='flow_title_2'>    
                                                         最新のデジタル技術を活用し課題を解決いたします。
                                                     </p>
                                                 </div>
@@ -211,7 +211,7 @@ const Home: NextPage = () => {
                                                     <p className="flow_title">
                                                         STEP.3<span className="ml-3">運用体制の構築</span>
                                                     </p>
-                                                    <p>
+                                                    <p className='flow_title_2'>
                                                         一過性の活動ではなく継続的な変革にすることが重要です。
                                                         運用～定着化、成果に応じたブラッシュアップをサポートいたします。
                                                     </p>
@@ -310,9 +310,9 @@ const Home: NextPage = () => {
                                 <div className="showModal_detail">
                                     {/*header*/}
                                     <div className="showModal_header">
-                                        <h3 className="text-xl font-semibold text-white">
+                                        <p>
                                             数年の間、教育資料が変わっておらず、適切な教育がしづらい状態にある…。
-                                        </h3>
+                                        </p>
                                     </div>
                                     {/*body*/}
                                     <Splide
@@ -331,7 +331,7 @@ const Home: NextPage = () => {
                                                     <p className="flow_title">
                                                         STEP.1<span className="ml-3">現状把握</span>
                                                     </p>
-                                                    <p>
+                                                    <p className='flow_title_2'>
                                                         現状の問題点を把握して、改善すべき課題をお客様に寄り添いながら共に考えます。
                                                     </p>
                                                 </div>
@@ -374,13 +374,13 @@ const Home: NextPage = () => {
                                                     <p className="flow_title">
                                                         STEP.2<span className="ml-3">解決策の企画・提案</span>
                                                     </p>
-                                                    <p>
+                                                    <p className='flow_title_2'>
                                                         課題に対し、費用対効果を考慮しながら、最適な解決策を企画・提案いたします。
                                                     </p>
-                                                    <p>    
+                                                    <p className='flow_title_2'>    
                                                         Taira{' '}Promoteは、専門性の高いスタッフが多く在籍しています。
                                                     </p>
-                                                    <p>    
+                                                    <p className='flow_title_2'>    
                                                         最新のデジタル技術を活用し課題を解決いたします。
                                                     </p>
                                                 </div>
@@ -409,7 +409,7 @@ const Home: NextPage = () => {
                                                     <p className="flow_title">
                                                         STEP.3<span className="ml-3">運用体制の構築</span>
                                                     </p>
-                                                    <p>
+                                                    <p className='flow_title_2'>
                                                         一過性の活動ではなく継続的な変革にすることが重要です。
                                                         運用～定着化、成果に応じたブラッシュアップをサポートいたします。
                                                     </p>
@@ -487,9 +487,9 @@ const Home: NextPage = () => {
                                 <div className="showModal_detail">
                                     {/*header*/}
                                     <div className="showModal_header">
-                                        <h3 className="text-xl font-semibold text-white">
+                                        <p>
                                             メンテナンス現場での情報検索が大変、サービスマンの仕事をもっとラクにしたい…。
-                                        </h3>
+                                        </p>
                                     </div>
                                     {/*body*/}
                                     <Splide
@@ -508,7 +508,7 @@ const Home: NextPage = () => {
                                                     <p className="flow_title">
                                                         STEP.1<span className="ml-3">現状把握</span>
                                                     </p>
-                                                    <p>
+                                                    <p className='flow_title_2'>
                                                         現状の問題点を把握して、改善すべき課題をお客様に寄り添いながら共に考えます。
                                                     </p>
                                                 </div>
@@ -547,7 +547,7 @@ const Home: NextPage = () => {
                                                     <p className="flow_title">
                                                         STEP.2<span className="ml-3">解決策の企画・提案</span>
                                                     </p>
-                                                    <p>
+                                                    <p className='flow_title_2'>
                                                         課題に対し、費用対効果を考慮しながら、最適な解決策を企画・提案いたします。
                                                     </p>
                                                     <p>    
@@ -580,7 +580,7 @@ const Home: NextPage = () => {
                                                     <p className="flow_title">
                                                         STEP.3<span className="ml-3">運用体制の構築</span>
                                                     </p>
-                                                    <p>
+                                                    <p className='flow_title_2'>
                                                         一過性の活動ではなく継続的な変革にすることが重要です。
                                                         運用～定着化、成果に応じたブラッシュアップをサポートいたします。
                                                     </p>
@@ -669,9 +669,9 @@ const Home: NextPage = () => {
                                 <div className="showModal_detail">
                                     {/*header*/}
                                     <div className="showModal_header">
-                                        <h3 className="text-xl font-semibold text-white">
+                                        <p>
                                             紙ベースのマニュアルで、情報共有、マニュアル更新が非効率…。
-                                        </h3>
+                                        </p>
                                     </div>
                                     {/*body*/}
                                     <Splide
@@ -690,7 +690,7 @@ const Home: NextPage = () => {
                                                     <p className="flow_title">
                                                         STEP.1<span className="ml-3">現状把握</span>
                                                     </p>
-                                                    <p>
+                                                    <p className='flow_title_2'>
                                                         現状の問題点を把握して、改善すべき課題をお客様に寄り添いながら共に考えます。
                                                     </p>
                                                 </div>
@@ -728,13 +728,13 @@ const Home: NextPage = () => {
                                                     <p className="flow_title">
                                                         STEP.2<span className="ml-3">解決策の企画・提案</span>
                                                     </p>
-                                                    <p>
+                                                    <p className='flow_title_2'>
                                                         課題に対し、費用対効果を考慮しながら、最適な解決策を企画・提案いたします。
                                                     </p>
-                                                    <p>    
+                                                    <p className='flow_title_2'>    
                                                         Taira{' '}Promoteは、専門性の高いスタッフが多く在籍しています。
                                                     </p>
-                                                    <p>    
+                                                    <p className='flow_title_2'>    
                                                         最新のデジタル技術を活用し課題を解決いたします。
                                                     </p>
                                                 </div>
@@ -765,7 +765,7 @@ const Home: NextPage = () => {
                                                     <p className="flow_title">
                                                         STEP.3<span className="ml-3">運用体制の構築</span>
                                                     </p>
-                                                    <p>
+                                                    <p className='flow_title_2'>
                                                         一過性の活動ではなく継続的な変革にすることが重要です。
                                                         運用～定着化、成果に応じたブラッシュアップをサポートいたします。
                                                     </p>

@@ -32,8 +32,8 @@
     justify-center
     font-extrabold
     text-blue-900
-    text-7xl
-    max-md:text-5xl
+    text-6xl
+    max-sm:text-4xl
   }
 
 .title{
@@ -143,7 +143,7 @@
     text-gray-900
     font-bold
     justify-start
-    bg-gradient-to-r from-blue-700 via-blue-500 to-slate-50 bg-[length:100%_2px] bg-no-repeat bg-bottom
+    bg-gradient-to-r from-blue-700 via-blue-500 bg-[length:100%_2px] bg-no-repeat bg-bottom
     text-3xl
     p-2
     max-md:text-2xl
@@ -188,13 +188,21 @@
 .flow_title{
     @apply
     text-2xl
+    max-sm:text-xl
     font-bold
+}
+
+.flow_title_2{
+    @apply
+    text-xl
+    max-sm:text-sm
 }
 
 .flow_sub_title{
     @apply
     font-extrabold
     text-base
+    max-sm:text-sm
 }
 
 .flow_sub_title_color{
@@ -205,6 +213,7 @@
 .flow_sub_text{
     @apply
     text-sm
+    max-sm:text-xs
     mx-1
     text-gray-700
 }
@@ -250,7 +259,7 @@
     text-center 
     text-white
     bg-blue-900
-    hover:bg-blue-700
+    hover:bg-gray-700
 }
 
 
@@ -278,7 +287,7 @@
     text-center
     text-white
     bg-blue-900
-    hover:bg-blue-700
+    hover:bg-gray-700
 }
 
 .btn4{
@@ -291,7 +300,7 @@
     text-center
     text-white
     bg-blue-900
-    hover:bg-blue-700
+    hover:bg-gray-700
 }
 
 
@@ -301,28 +310,37 @@
     @apply
     justify-center 
     items-center 
+    md:bottom-28
     flex 
     overflow-x-hidden
     overflow-y-hidden 
     fixed 
-    inset-10 
-    z-50 
+    inset-5
+    z-50
 }
 
 .showModal_header{
     @apply
     p-3
+    flex
     rounded-t 
     bg-blue-900
+    text-xl 
+    font-semibold 
+    text-white
+    max-lg:text-lg
+    max-lg:px-10
 }
 
 .showModal_content{
     @apply
+    flex
     relative 
     mx-auto
     my-auto  
     max-w-3xl 
-    h-full
+    max-lg:w-screen
+    h-screen
 }
 
 .showModal_detail{
@@ -342,7 +360,7 @@
     gap-3
     grid
     xl:grid-cols-4
-    lg:grid-cols-2
+    md:lg:grid-cols-2
     mx-auto
 }
 
