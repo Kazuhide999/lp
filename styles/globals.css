@@ -30,15 +30,16 @@
     flex-col
     items-center
     justify-center
-    text-7xl
     font-extrabold
     text-blue-900
-    text-left
+    text-7xl
+    max-md:text-5xl
   }
 
 .title{
     @apply
     p-5
+    max-lg:text-4xl
     text-5xl
     mx-auto
     max-w-3xl
@@ -51,7 +52,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     background-image:
         linear-gradient(8deg, rgba(255, 255, 255, 0.9) 60%, rgba(129, 129, 129, 0.2) 90%),
-        url(/section3.jpg);
+        url(/section1.jpg);
     background-position: center;
 
     @apply
@@ -86,20 +87,18 @@
     font-semibold
     p-10
     mt-10
-    max-xl:text-2xl 
+    max-lg:text-4xl 
 }
 
 .containar3{
     clip-path: polygon(100% 100%,100% 20%,0% 0%,0% 100%);
     background-image:
-        linear-gradient(125deg, rgba(255, 255, 255, 0.9) 50%, rgba(129, 129, 129, 0.1) 70%),
-        url(/section1.jpg);
+        linear-gradient(125deg, rgba(255, 255, 255, 0.9) 50%, rgba(129, 129, 129, 0.1) 85%),
+        url(/section3.jpg);
     background-position: left;
 
     @apply
     w-full
-    h-max
-    /* コンテナ中央 */
     mx-auto
     flex
     flex-col
@@ -113,6 +112,31 @@
     max-xl:p-2
 }
 
+@media screen and (max-width: 959px) {
+    .containar3{
+        clip-path: polygon(100% 100%,100% 20%,0% 0%,0% 100%);
+        background-image:
+            linear-gradient(125deg, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0.6) 85%),
+            url(/section3.jpg);
+        background-position: left;
+    
+        @apply
+        w-full
+        mx-auto
+        flex
+        flex-col
+        mt-10
+        justify-center
+        bg-white
+        xl:pb-24
+        xl:pt-24
+        xl:px-5
+        max-xl:pt-32
+        max-xl:p-2
+    }
+}
+
+
 .cont3_title{
     @apply
     mt-10
@@ -122,7 +146,16 @@
     bg-gradient-to-r from-blue-700 via-blue-500 to-slate-50 bg-[length:100%_2px] bg-no-repeat bg-bottom
     text-3xl
     p-2
-    max-xl:text-2xl 
+    max-md:text-2xl
+}
+
+.cont3_text{
+    @apply
+    flex  
+    px-3
+    font-bold
+    text-xl 
+    max-md:text-lg
 }
 
 /* _____Flow____ */
@@ -308,7 +341,8 @@
     @apply
     gap-3
     grid
-    grid-cols-2
+    xl:grid-cols-4
+    lg:grid-cols-2
     mx-auto
 }
 
@@ -319,6 +353,7 @@
     rounded-lg 
     bg-white 
     shadow-lg
+    shadow-gray-900
     w-72
 }
 

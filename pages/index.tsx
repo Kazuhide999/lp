@@ -20,20 +20,20 @@ const Home: NextPage = () => {
             <video className='video'src='/lp_title_bg.mp4' autoPlay loop muted playsInline></video>
             <div className="mv_txt">
                 <p className='p-4'>
-                    <span className='p-2'>悩</span>{' '}<span className='p-2'>み</span>{' '}<span className='p-2'>を</span>{' '}<span className='p-2'>、</span>
+                    <span className='lg:p-2'>悩</span>{' '}<span className='lg:p-2'>み</span>{' '}<span className='lg:p-2'>を</span>{' '}<span className='lg:p-2'>、</span>
                 </p>
                 <p className='p-4'>
-                    <span className='p-2'>課</span>{' '}<span className='p-2'>題</span>{' '}<span className='p-2'>に</span>{' '}<span className='p-2'>、</span>
+                    <span className='lg:p-2'>課</span>{' '}<span className='lg:p-2'>題</span>{' '}<span className='lg:p-2'>に</span>{' '}<span className='lg:p-2'>、</span>
                 </p>
                 <p className='p-4'>
-                    <span className='p-2'>解</span>{' '}<span className='p-2'>決</span>{' '}<span className='p-2'>へ</span>{' '}<span className='p-2'>。</span>
+                    <span className='lg:p-2'>解</span>{' '}<span className='lg:p-2'>決</span>{' '}<span className='lg:p-2'>へ</span>{' '}<span className='lg:p-2'>。</span>
                 </p>
             </div>
-            <div className='animate-bounce absolute left-1/2 bottom-5'>
+            <div className='animate-bounce absolute inset-x-0 bottom-2'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 mx-auto mt-20 stroke-white">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
                 </svg>
-                <p className='text-xl font-bold text-white'>Scroll</p>
+                <p className='text-xl max-lg:text-lg font-bold text-center text-white'>Scroll</p>
             </div>
         </div>
         {/* section_1 */}
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
                 <p>
                     <span className='text-blue-800'>「伴走型」</span>課題解決サービス
                 </p>
-                <div className="font-semibold mt-5 text-lg">
+                <div className="font-semibold mt-5 text-lg max-lg:text-base max-sm:text-sm">
                     <p>
                         「企業課題」を、現状把握・課題形成から解決策・運用方法・定着化まで
                     </p>
@@ -67,13 +67,13 @@ const Home: NextPage = () => {
         <div className="containar2-2 py-6">
             <div className="cont2_title">
                 <p>
-                    Taira{' '}Promote{' '}<span className='text-4xl'>が</span>{" "}解決<span className='text-4xl'>してきた{" "}</span><span className='text-blue-600'>「事例」</span>
+                    Taira{' '}Promote{' '}<span className='text-4xl max-lg:text-3xl'>が</span>{" "}解決<span className='text-4xl max-lg:text-3xl'>してきた{" "}</span><span className='text-blue-600'>「事例」</span>
                 </p>
             </div>
             <div className="card_area">
                 {/* card_1 */}
                 <div className="card_detail">
-                <Image className='w-full rounded-t-lg' src='/section1.jpg' alt="test_image" width={200} height={200}/>
+                <Image className='w-full rounded-t-lg' src='/seizou_img.jpg' alt="test_image" width={300} height={300}/>
                     <div className="px-6 py-3">
                         <div className="card_text">
                             <p>
@@ -234,10 +234,10 @@ const Home: NextPage = () => {
                                         {/* flow4 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image className='mt-16' src='/step_icon_04.png' alt="problem" width={150} height={150}/>
+                                            <Image src='/step_icon_04.png' alt="problem" width={270} height={270}/>
                                             <div className="flow_area">
                                                 <div className='mx-10'>
-                                                    <p className="flow_title mt-5">
+                                                    <p className="flow_title">
                                                         <span className="flow_sub_title_color">効果</span>
                                                     </p>
                                                     <div className='flow_4_text'>
@@ -285,7 +285,7 @@ const Home: NextPage = () => {
                 </div>
                 {/* card_2 */}
                 <div className="card_detail">
-                <Image className='w-full rounded-t-lg' src='/section1.jpg' alt="test_image" width={200} height={200}/>
+                <Image className='w-full rounded-t-lg' src='/kyouiku_img.jpg' alt="test_image" width={200} height={200}/>
                     <div className="px-6 py-3">
                         <div className="card_text">
                             <p>
@@ -430,10 +430,10 @@ const Home: NextPage = () => {
                                         {/* flow4 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image className='mt-16' src='/step_icon_04.png' alt="problem" width={150} height={150}/>
+                                            <Image className="mt-5"src='/step_icon_04.png' alt="problem" width={270} height={270}/>
                                             <div className="flow_area">
                                                 <div className='mx-10'>
-                                                    <p className="flow_title mt-5">
+                                                    <p className="flow_title">
                                                         <span className="flow_sub_title_color">効果</span>
                                                     </p>
                                                     <div className='flow_4_text'>
@@ -467,7 +467,7 @@ const Home: NextPage = () => {
                 </div>
                 {/* card_3 */}
                 <div className="card_detail">
-                <Image className='w-full rounded-t-lg' src='/section1.jpg' alt="test_image" width={200} height={200}/>
+                <Image className='w-full rounded-t-lg' src='/mente_img.jpg' alt="test_image" width={200} height={200}/>
                     <div className="px-6 py-3">
                         <div className="card_text">
                             メンテナンス現場での情報検索が大変、サービスマンの仕事をもっとラクにしたい…。
@@ -601,10 +601,10 @@ const Home: NextPage = () => {
                                         {/* flow4 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image className='mt-16' src='/step_icon_04.png' alt="problem" width={150} height={150}/>
+                                            <Image className='mt-5' src='/step_icon_04.png' alt="problem" width={270} height={270}/>
                                             <div className="flow_area">
                                                 <div className='mx-10'>
-                                                    <p className="flow_title mt-5">
+                                                    <p className="flow_title">
                                                         <span className="flow_sub_title_color">効果</span>
                                                     </p>
                                                     <div className='flow_4_text'>
@@ -614,7 +614,10 @@ const Home: NextPage = () => {
                                                     </div>
                                                     <div className='flow_4_text'>
                                                         <p>
-                                                            設計データの有効活用により、3Dモデリング等のアプリ制作費用が低減できました。
+                                                            設計データの有効活用により、3Dモデリング等のアプリ制作費用が
+                                                        </p>
+                                                        <p>
+                                                            低減できました。
                                                         </p>
                                                     </div>                                
                                                 </div>    
@@ -638,18 +641,21 @@ const Home: NextPage = () => {
                 </div>
                 {/* card_4 */}
                 <div className="card_detail">
-                <Image className='w-full rounded-t-lg' src='/section1.jpg' alt="test_image" width={200} height={200}/>
+                <Image className='w-full rounded-t-lg' src='/kami_img.jpg' alt="test_image" width={200} height={200}/>
                     <div className="px-6 py-3">
                         <div className="card_text">
                             <p>
-                                紙のマニュアルで、情報共有、
-                            </p> 
+                                紙ベースのマニュアルで、
+                            </p>
                             <p>
-                                マニュアル更新が非効率…。
+                                情報共有、マニュアル更新が
+                            </p>  
+                            <p>
+                                非効率…。
                             </p>                     
                         </div>
                         {/*modal 4*/}
-                        <div className='flex mt-9'>
+                        <div className='flex'>
                             <button className="btn3 flex mt-5" type="button" onClick={() => setShowModal_4(true)}>
                                 <Image className='animate-heartbeat mr-2' src='/タッチアイコン.svg' alt="click" width={30} height={30}/>
                                     詳しくはこちら
@@ -780,10 +786,10 @@ const Home: NextPage = () => {
                                         {/* flow4 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image className='mt-16' src='/step_icon_04.png' alt="problem" width={150} height={150}/>
+                                            <Image className='mt-5' src='/step_icon_04.png' alt="problem" width={270} height={270}/>
                                             <div className="flow_area">
                                                 <div className='mx-10'>
-                                                    <p className="flow_title mt-5">
+                                                    <p className="flow_title">
                                                         <span className="flow_sub_title_color">効果</span>
                                                     </p>
                                                     <div className='flow_4_text'>
@@ -836,10 +842,13 @@ const Home: NextPage = () => {
         <div className="containar3">
             <div className='cont3_title'>
                 <p>
-                    Taira{' '}Promote{' '}を選ぶメリット{' '}<span className="text-base">～創業以来私たちが取り組んできたのは「伝える」ための仕組みづくりです～</span>
+                    Taira{' '}Promote{' '}を選ぶメリット
+                </p>
+                <p>
+                    <span className="text-base max-md:text-sm">～創業以来私たちが取り組んできたのは「伝える」ための仕組みづくりです～</span>
                 </p>
             </div>
-            <div className='flex max-lg:w-screen px-3 text-xl font-bold'>
+            <div className='cont3_text'>
                 <div className='text-gray-800 list-disc pt-5'>
                     <li className='mt-5 flex items-center space-x-3'>
                         <div>
@@ -867,7 +876,7 @@ const Home: NextPage = () => {
                     </li>
                 </div>
             </div>
-            <div className="flex flex-col justify-center items-center pt-5">
+            <div className="flex flex-col justify-center items-center pt-5 max-lg:mb-10">
                 <button type="button" className="btn2">
                         <a href="/">
                             お問い合わせ
