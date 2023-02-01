@@ -65,26 +65,14 @@
     py-16
 }
 
-.containar1_list{
-    @apply
-    text-gray-900 
-    text-2xl 
-    text-start 
-    font-bold 
-    mt-10 
-    ml-36 
-    mb-20
-}
-
 .containar2-2{
     @apply
+    mx-auto
     pt-10
     w-full
     h-max
-    mx-auto
     flex
     flex-col
-    max-w-7xl
     xl:w-full
     text-gray-900
 }
@@ -93,11 +81,10 @@
     @apply
     text-white 
     flex
-    justify-start
+    justify-center
     text-5xl
     font-semibold
-    max-w-7xl
-    p-3
+    p-10
     mt-10
     max-xl:text-2xl 
 }
@@ -132,7 +119,7 @@
     text-gray-900
     font-bold
     justify-start
-    bg-gradient-to-r from-red-500 via-red-400 to-white bg-[length:100%_3px] bg-no-repeat bg-bottom
+    bg-gradient-to-r from-blue-700 via-blue-500 to-slate-50 bg-[length:100%_2px] bg-no-repeat bg-bottom
     text-3xl
     p-2
     max-xl:text-2xl 
@@ -177,6 +164,11 @@
     text-base
 }
 
+.flow_sub_title_color{
+    @apply
+    text-blue-900
+}
+
 .flow_sub_text{
     @apply
     text-sm
@@ -191,7 +183,7 @@
     mt-2 
     bg-white 
     border-l-8 
-    border-red-900 
+    border-red-500 
     p-2 
     shadow-lg
 }
@@ -219,14 +211,13 @@
     rounded-lg
     mt-20
     px-10 
-    py-1 
+    shadow-lg
+    py-1
     text-lg
     text-center 
-    font-semibold
-    outline 
     text-white
-    bg-gray-900
-    hover:bg-red-500
+    bg-blue-900
+    hover:bg-blue-700
 }
 
 
@@ -250,22 +241,21 @@
     shadow-lg
     py-1
     px-3 
-    text-xl
+    text-lg
     text-center
-    font-semibold 
-    text-gray-900
-    bg-gray-100
-    hover:bg-red-500
+    text-white
+    bg-blue-900
+    hover:bg-blue-700
 }
 
 .btn4{
     @apply
     rounded-lg
+    shadow-lg
     py-1
     px-3 
-    text-xl
+    text-lg
     text-center
-    font-semibold 
     text-white
     bg-blue-900
     hover:bg-blue-700
@@ -309,8 +299,32 @@
     flex 
     flex-col 
     w-full 
-    bg-gray-100 
+    bg-slate-50 
 }
 
 /* _____card____ */
 
+.card_area{
+    @apply
+    gap-3
+    grid
+    grid-cols-2
+    mx-auto
+}
+
+.card_detail{
+    @apply
+    mx-5
+    mt-2
+    rounded-lg 
+    bg-white 
+    shadow-lg
+    w-72
+}
+
+.card_text{
+    @apply
+    font-bold 
+    text-lg
+    mb-2
+}
