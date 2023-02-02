@@ -188,14 +188,14 @@
 .flow_title{
     @apply
     text-2xl
-    max-sm:text-xl
+    max-sm:text-base
     font-bold
 }
 
 .flow_title_2{
     @apply
     text-xl
-    max-sm:text-sm
+    max-sm:text-xs
 }
 
 .flow_sub_title{
@@ -325,7 +325,8 @@
     flex
     rounded-t 
     bg-blue-900
-    text-xl 
+    text-xl
+    max-sm:text-sm
     font-semibold 
     text-white
     max-lg:text-lg

@@ -113,7 +113,7 @@ const Home: NextPage = () => {
                                         {/* flow1 */}                                
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_01.png' alt="problem" width={270} height={270}/>
+                                            <Image src='/step_icon_01.png' alt="problem" width={256} height={256}/>
                                             <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -164,7 +164,7 @@ const Home: NextPage = () => {
                                         {/* flow2 */}
                                         <SplideSlide>
                                         <div className="flow">    
-                                        <Image src='/step_icon_02.png' alt="problem" width={270} height={270}/>
+                                        <Image src='/step_icon_02.png' alt="problem" width={256} height={256}/>
                                         <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -205,7 +205,7 @@ const Home: NextPage = () => {
                                         {/* flow3 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_03.png' alt="problem" width={270} height={270}/>
+                                            <Image src='/step_icon_03.png' alt="problem" width={256} height={256}/>
                                             <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -234,7 +234,7 @@ const Home: NextPage = () => {
                                         {/* flow4 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_04.png' alt="problem" width={270} height={270}/>
+                                            <Image src='/step_icon_04.png' alt="problem" width={256} height={256}/>
                                             <div className="flow_area">
                                                 <div className='mx-10'>
                                                     <p className="flow_title">
@@ -325,7 +325,7 @@ const Home: NextPage = () => {
                                         {/* flow1 */}                                
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_01.png' alt="problem" width={270} height={270}/>
+                                            <Image src='/step_icon_01.png' alt="problem" width={256} height={256}/>
                                             <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -368,7 +368,7 @@ const Home: NextPage = () => {
                                         {/* flow2 */}
                                         <SplideSlide>
                                         <div className="flow">    
-                                        <Image src='/step_icon_02.png' alt="problem" width={270} height={270}/>
+                                        <Image src='/step_icon_02.png' alt="problem" width={256} height={256}/>
                                         <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -403,7 +403,7 @@ const Home: NextPage = () => {
                                         {/* flow3 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_03.png' alt="problem" width={270} height={270}/>
+                                            <Image src='/step_icon_03.png' alt="problem" width={256} height={256}/>
                                             <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -430,7 +430,7 @@ const Home: NextPage = () => {
                                         {/* flow4 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image className="mt-5"src='/step_icon_04.png' alt="problem" width={270} height={270}/>
+                                            <Image className="mt-5"src='/step_icon_04.png' alt="problem" width={256} height={256}/>
                                             <div className="flow_area">
                                                 <div className='mx-10'>
                                                     <p className="flow_title">
@@ -502,7 +502,7 @@ const Home: NextPage = () => {
                                         {/* flow1 */}                                
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_01.png' alt="problem" width={270} height={270}/>
+                                            <Image src='/step_icon_01.png' alt="problem" width={256} height={256}/>
                                             <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -541,7 +541,7 @@ const Home: NextPage = () => {
                                         {/* flow2 */}
                                         <SplideSlide>
                                         <div className="flow">    
-                                        <Image src='/step_icon_02.png' alt="problem" width={270} height={270}/>
+                                        <Image src='/step_icon_02.png' alt="problem" width={256} height={256}/>
                                         <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -574,7 +574,7 @@ const Home: NextPage = () => {
                                         {/* flow3 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_03.png' alt="problem" width={270} height={270}/>
+                                            <Image src='/step_icon_03.png' alt="problem" width={256} height={256}/>
                                             <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -601,7 +601,7 @@ const Home: NextPage = () => {
                                         {/* flow4 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image className='mt-5' src='/step_icon_04.png' alt="problem" width={270} height={270}/>
+                                            <Image className='mt-5' src='/step_icon_04.png' alt="problem" width={256} height={256}/>
                                             <div className="flow_area">
                                                 <div className='mx-10'>
                                                     <p className="flow_title">
@@ -684,7 +684,7 @@ const Home: NextPage = () => {
                                         {/* flow1 */}                                
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_01.png' alt="problem" width={270} height={270}/>
+                                            <Image src='/step_icon_01.png' alt="problem" width={256} height={256}/>
                                             <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -722,7 +722,7 @@ const Home: NextPage = () => {
                                         {/* flow2 */}
                                         <SplideSlide>
                                         <div className="flow">    
-                                        <Image src='/step_icon_02.png' alt="problem" width={270} height={270}/>
+                                        <Image src='/step_icon_02.png' alt="problem" width={256} height={256}/>
                                         <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -759,7 +759,7 @@ const Home: NextPage = () => {
                                         {/* flow3 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_03.png' alt="problem" width={270} height={270}/>
+                                            <Image src='/step_icon_03.png' alt="problem" width={256} height={256}/>
                                             <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -786,7 +786,7 @@ const Home: NextPage = () => {
                                         {/* flow4 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image className='mt-5' src='/step_icon_04.png' alt="problem" width={270} height={270}/>
+                                            <Image className='mt-5' src='/step_icon_04.png' alt="problem" width={256} height={256}/>
                                             <div className="flow_area">
                                                 <div className='mx-10'>
                                                     <p className="flow_title">
