@@ -194,7 +194,7 @@
 
 .flow_title_2{
     @apply
-    text-xl
+    text-base
     max-sm:text-xs
 }
 
