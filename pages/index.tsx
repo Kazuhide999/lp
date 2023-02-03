@@ -878,7 +878,7 @@ const Home: NextPage = () => {
             </div>
             <div className="flex flex-col justify-center items-center pt-5 max-lg:mb-10">
                 <button type="button" className="btn2">
-                        <a href="/">
+                        <a href="https://www.tairapromote.co.jp/contact.html">
                             お問い合わせ
                         </a>
                 </button>
@@ -893,6 +893,8 @@ const Home: NextPage = () => {
             <Image src="/tp_logo.png" alt="tp_logo" width={200} height={100}/>
         </a>
         </footer>
+        {/* --SATORIタグ-- */}
+        {/* ここに挿入予定。動くのかわからん…。 */}
     </div>
     );
 }
