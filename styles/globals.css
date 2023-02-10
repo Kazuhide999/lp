@@ -52,7 +52,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     background-image:
         linear-gradient(8deg, rgba(255, 255, 255, 0.9) 60%, rgba(129, 129, 129, 0.2) 90%),
-        url(/section1.jpg);
+        url(../public/section1.jpg);
     background-position: center;
 
     @apply
@@ -94,7 +94,7 @@
     clip-path: polygon(100% 100%,100% 20%,0% 0%,0% 100%);
     background-image:
         linear-gradient(125deg, rgba(255, 255, 255, 0.9) 50%, rgba(129, 129, 129, 0.1) 85%),
-        url(/section3.jpg);
+        url(../public/section3.jpg);
     background-position: left;
 
     @apply
@@ -117,7 +117,7 @@
         clip-path: polygon(100% 100%,100% 20%,0% 0%,0% 100%);
         background-image:
             linear-gradient(125deg, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0.6) 85%),
-            url(/section3.jpg);
+            url(../public/section3.jpg);
         background-position: left;
     
         @apply
@@ -266,10 +266,10 @@
 .btn2{
     @apply
     rounded-lg
-    px-20 
-    py-1 
+    px-28 
+    py-2 
     mt-10
-    text-lg
+    text-xl
     text-center 
     font-semibold 
     text-white

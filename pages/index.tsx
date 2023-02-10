@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
 import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/splide/css'
-
+import Script from 'next/script';
 
 const Home: NextPage = () => {
     const [showModal_1, setShowModal_1] = React.useState(false); 
@@ -14,10 +14,37 @@ const Home: NextPage = () => {
     return (
     <div className="body">
         <Head>
-            <title>Taira Promote</title>
+            <title>「伴走型」課題解決サービス | マニュアル制作と動画制作の平プロモート</title>
+            <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"></link>
+            <link rel="apple-touch-icon-precomposed" href="/images/57x57.png"></link>
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/72x72.png"></link>
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/114x114.png"></link>
+            <link rel="apple-touch-icon-precomposed" sizes="144x114" href="/images/144x144.png"></link>
+            <Script
+                type="text/javascript" 
+                id="_-s-js-_"
+                src="//satori.segs.jp/s.js?c=d924485c"
+            />
+            <Script
+                strategy="afterInteractive"
+                src="https://www.googletagmanager.com/gtag/js?id=UA-52214657-1"
+            />
+            <Script
+                id="gtag-init"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'UA-52214657-1');
+                    `,
+                }}
+            />
         </Head>
         <div>
-            <video className='video'src='/lp_title_bg.mp4' autoPlay loop muted playsInline></video>
+            <video className='video'src='lp_title_bg.mp4' autoPlay loop muted playsInline></video>
             <div className="mv_txt">
                 <p className='p-4'>
                     <span className='lg:p-2'>悩</span>{' '}<span className='lg:p-2'>み</span>{' '}<span className='lg:p-2'>を</span>{' '}<span className='lg:p-2'>、</span>
@@ -53,13 +80,16 @@ const Home: NextPage = () => {
             </div>
             <div className='flex items-center max-xl:flex-col mx-auto mt-10 mb-44'>
                 <div>
-                    <Image  className="" src='/課題_2.svg' alt="Task"  width={400} height={400}/>
+                    <img src="課題_2.svg"alt="課題"width="400" height="400"></img>
+                    {/* <Image src='/課題_2.svg' alt="Task"  width={400} height={400}/> */}
                 </div>
                 <div className='p-10'>
-                    <Image src='/x.svg' alt="Task" width={50} height={50}/>
+                    <img src="x.svg"alt="×"width="50" height="50"></img>
+                    {/* <Image src='/x.svg' alt="×" width={50} height={50}/> */}
                 </div>
                 <div>
-                    <Image src='/伴走型-課題解決_SERVICE.svg' alt="service" width={800} height={500}/>
+                    <img src="伴走型-課題解決_SERVICE.svg"alt="service"width="800" height="800"></img>
+                    {/* <Image src='/伴走型-課題解決_SERVICE.svg' alt="service" width={800} height={500}/> */}
                 </div>
             </div>
         </div>
@@ -73,7 +103,8 @@ const Home: NextPage = () => {
             <div className="card_area">
                 {/* card_1 */}
                 <div className="card_detail">
-                <Image className='w-full rounded-t-lg' src='/seizou_img.jpg' alt="test_image" width={300} height={300}/>
+                <img className="w-full rounded-t-lg" src="seizou_img.jpg"alt="seisou_image"></img>
+                {/* <Image className='w-full rounded-t-lg' src='/seizou_img.jpg' alt="test_image" width={300} height={300}/> */}
                     <div className="px-6 py-3">
                         <div className="card_text">
                             <p>
@@ -86,7 +117,8 @@ const Home: NextPage = () => {
                         {/*modal 1*/}
                         <div className='flex'>
                             <button className="btn3 flex mt-5" type="button" onClick={() => setShowModal_1(true)}>
-                                <Image className='animate-heartbeat mr-2' src='/タッチアイコン.svg' alt="click" width={30} height={30}/>
+                                <img className="animate-heartbeat mr-2" src="タッチアイコン.svg"alt="click" width="30" height="30"></img>
+                                {/* <Image className='animate-heartbeat mr-2' src='/タッチアイコン.svg' alt="click" width={30} height={30}/> */}
                                     詳しくはこちら
                             </button>
                         </div>
@@ -113,7 +145,8 @@ const Home: NextPage = () => {
                                         {/* flow1 */}                                
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_01.png' alt="problem" width={256} height={256}/>
+                                            <img src="step_icon_01.png"alt="problem" width="256" height="256"></img>
+                                            {/* <Image src='/step_icon_01.png' alt="problem" width={256} height={256}/> */}
                                             <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -163,9 +196,10 @@ const Home: NextPage = () => {
                                         </SplideSlide>
                                         {/* flow2 */}
                                         <SplideSlide>
-                                        <div className="flow">    
-                                        <Image src='/step_icon_02.png' alt="problem" width={256} height={256}/>
-                                        <div className="flow_area">
+                                        <div className="flow">
+                                            <img src="step_icon_02.png"alt="problem" width="256" height="256"></img>    
+                                            {/* <Image src='/step_icon_02.png' alt="problem" width={256} height={256}/> */}
+                                            <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
                                                         STEP.2<span className="ml-3">解決策の企画・提案</span>
@@ -205,7 +239,8 @@ const Home: NextPage = () => {
                                         {/* flow3 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_03.png' alt="problem" width={256} height={256}/>
+                                            <img src="step_icon_03.png"alt="problem" width="256" height="256"></img>
+                                            {/* <Image src='/step_icon_03.png' alt="problem" width={256} height={256}/> */}
                                             <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -234,7 +269,8 @@ const Home: NextPage = () => {
                                         {/* flow4 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_04.png' alt="problem" width={256} height={256}/>
+                                            <img src="step_icon_04.png"alt="problem" width="256" height="256"></img>
+                                            {/* <Image src='/step_icon_04.png' alt="problem" width={256} height={256}/> */}
                                             <div className="flow_area">
                                                 <div className='mx-10'>
                                                     <p className="flow_title">
@@ -285,7 +321,8 @@ const Home: NextPage = () => {
                 </div>
                 {/* card_2 */}
                 <div className="card_detail">
-                <Image className='w-full rounded-t-lg' src='/kyouiku_img.jpg' alt="test_image" width={200} height={200}/>
+                <img className="w-full rounded-t-lg" src="kyouiku_img.jpg"alt="kyouiku_image"></img>
+                {/* <Image className='w-full rounded-t-lg' src='/kyouiku_img.jpg' alt="test_image" width={200} height={200}/> */}
                     <div className="px-6 py-3">
                         <div className="card_text">
                             <p>
@@ -298,7 +335,8 @@ const Home: NextPage = () => {
                         {/*modal 2*/}
                         <div className='flex'>
                             <button className="btn3 flex mt-5" type="button" onClick={() => setShowModal_2(true)}>
-                                <Image className='animate-heartbeat mr-2' src='/タッチアイコン.svg' alt="click" width={30} height={30}/>
+                                <img className="animate-heartbeat mr-2" src="タッチアイコン.svg"alt="click" width="30" height="30"></img>
+                                {/* <Image className='animate-heartbeat mr-2' src='/タッチアイコン.svg' alt="click" width={30} height={30}/> */}
                                     詳しくはこちら
                             </button>
                         </div>
@@ -325,7 +363,8 @@ const Home: NextPage = () => {
                                         {/* flow1 */}                                
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_01.png' alt="problem" width={256} height={256}/>
+                                            <img src="step_icon_01.png"alt="problem" width="256" height="256"></img>
+                                            {/* <Image src='/step_icon_01.png' alt="problem" width={256} height={256}/> */}
                                             <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -367,9 +406,10 @@ const Home: NextPage = () => {
                                         </SplideSlide>
                                         {/* flow2 */}
                                         <SplideSlide>
-                                        <div className="flow">    
-                                        <Image src='/step_icon_02.png' alt="problem" width={256} height={256}/>
-                                        <div className="flow_area">
+                                        <div className="flow">
+                                            <img src="step_icon_02.png"alt="problem" width="256" height="256"></img>    
+                                            {/* <Image src='/step_icon_02.png' alt="problem" width={256} height={256}/> */}
+                                            <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
                                                         STEP.2<span className="ml-3">解決策の企画・提案</span>
@@ -403,7 +443,8 @@ const Home: NextPage = () => {
                                         {/* flow3 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_03.png' alt="problem" width={256} height={256}/>
+                                            <img src="step_icon_03.png"alt="problem" width="256" height="256"></img>
+                                            {/* <Image src='/step_icon_03.png' alt="problem" width={256} height={256}/> */}
                                             <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -430,7 +471,8 @@ const Home: NextPage = () => {
                                         {/* flow4 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image className="mt-5"src='/step_icon_04.png' alt="problem" width={256} height={256}/>
+                                            <img className="mt-5" src="step_icon_04.png"alt="problem" width="256" height="256"></img>
+                                            {/* <Image className="mt-5"src='/step_icon_04.png' alt="problem" width={256} height={256}/> */}
                                             <div className="flow_area">
                                                 <div className='mx-10'>
                                                     <p className="flow_title">
@@ -467,7 +509,8 @@ const Home: NextPage = () => {
                 </div>
                 {/* card_3 */}
                 <div className="card_detail">
-                <Image className='w-full rounded-t-lg' src='/mente_img.jpg' alt="test_image" width={200} height={200}/>
+                <img className="w-full rounded-t-lg" src="mente_img.jpg"alt="mente_image"></img>
+                {/* <Image className='w-full rounded-t-lg' src='/mente_img.jpg' alt="test_image" width={200} height={200}/> */}
                     <div className="px-6 py-3">
                         <div className="card_text">
                             メンテナンス現場での情報検索が大変、サービスマンの仕事をもっとラクにしたい…。
@@ -475,7 +518,8 @@ const Home: NextPage = () => {
                         {/*modal 3*/}
                         <div className='flex'>
                             <button className="btn3 flex mt-5" type="button" onClick={() => setShowModal_3(true)}>
-                                <Image className='animate-heartbeat mr-2' src='/タッチアイコン.svg' alt="click" width={30} height={30}/>
+                                <img className="animate-heartbeat mr-2" src="タッチアイコン.svg"alt="click" width="30" height="30"></img>
+                                {/* <Image className='animate-heartbeat mr-2' src='/タッチアイコン.svg' alt="click" width={30} height={30}/> */}
                                     詳しくはこちら
                             </button>
                         </div>
@@ -502,7 +546,8 @@ const Home: NextPage = () => {
                                         {/* flow1 */}                                
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_01.png' alt="problem" width={256} height={256}/>
+                                            <img src="step_icon_01.png"alt="problem" width="256" height="256"></img>
+                                            {/* <Image src='/step_icon_01.png' alt="problem" width={256} height={256}/> */}
                                             <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -540,9 +585,10 @@ const Home: NextPage = () => {
                                         </SplideSlide>
                                         {/* flow2 */}
                                         <SplideSlide>
-                                        <div className="flow">    
-                                        <Image src='/step_icon_02.png' alt="problem" width={256} height={256}/>
-                                        <div className="flow_area">
+                                        <div className="flow">
+                                            <img src="step_icon_02.png"alt="problem" width="256" height="256"></img>    
+                                            {/* <Image src='/step_icon_02.png' alt="problem" width={256} height={256}/> */}
+                                            <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
                                                         STEP.2<span className="ml-3">解決策の企画・提案</span>
@@ -574,7 +620,8 @@ const Home: NextPage = () => {
                                         {/* flow3 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_03.png' alt="problem" width={256} height={256}/>
+                                            <img src="step_icon_03.png"alt="problem" width="256" height="256"></img>
+                                            {/* <Image src='/step_icon_03.png' alt="problem" width={256} height={256}/> */}
                                             <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -601,7 +648,8 @@ const Home: NextPage = () => {
                                         {/* flow4 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image className='mt-5' src='/step_icon_04.png' alt="problem" width={256} height={256}/>
+                                            <img className='mt-5'src="step_icon_04.png"alt="problem" width="256" height="256"></img>
+                                            {/* <Image className='mt-5' src='/step_icon_04.png' alt="problem" width={256} height={256}/> */}
                                             <div className="flow_area">
                                                 <div className='mx-10'>
                                                     <p className="flow_title">
@@ -641,7 +689,8 @@ const Home: NextPage = () => {
                 </div>
                 {/* card_4 */}
                 <div className="card_detail">
-                <Image className='w-full rounded-t-lg' src='/kami_img.jpg' alt="test_image" width={200} height={200}/>
+                <img className="w-full rounded-t-lg" src="kami_img.jpg"alt="kami_image"></img>
+                {/* <Image className='w-full rounded-t-lg' src='/kami_img.jpg' alt="test_image" width={200} height={200}/> */}
                     <div className="px-6 py-3">
                         <div className="card_text">
                             <p>
@@ -657,7 +706,8 @@ const Home: NextPage = () => {
                         {/*modal 4*/}
                         <div className='flex'>
                             <button className="btn3 flex mt-5" type="button" onClick={() => setShowModal_4(true)}>
-                                <Image className='animate-heartbeat mr-2' src='/タッチアイコン.svg' alt="click" width={30} height={30}/>
+                                <img className="animate-heartbeat mr-2" src="タッチアイコン.svg"alt="click" width="30" height="30"></img>
+                                {/* <Image className='animate-heartbeat mr-2' src='/タッチアイコン.svg' alt="click" width={30} height={30}/> */}
                                     詳しくはこちら
                             </button>
                         </div>
@@ -684,7 +734,8 @@ const Home: NextPage = () => {
                                         {/* flow1 */}                                
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_01.png' alt="problem" width={256} height={256}/>
+                                            <img src="step_icon_01.png"alt="problem" width="256" height="256"></img>
+                                            {/* <Image src='/step_icon_01.png' alt="problem" width={256} height={256}/> */}
                                             <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -721,9 +772,10 @@ const Home: NextPage = () => {
                                         </SplideSlide>
                                         {/* flow2 */}
                                         <SplideSlide>
-                                        <div className="flow">    
-                                        <Image src='/step_icon_02.png' alt="problem" width={256} height={256}/>
-                                        <div className="flow_area">
+                                        <div className="flow">
+                                            <img src="step_icon_02.png"alt="problem" width="256" height="256"></img>    
+                                            {/* <Image src='/step_icon_02.png' alt="problem" width={256} height={256}/> */}
+                                            <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
                                                         STEP.2<span className="ml-3">解決策の企画・提案</span>
@@ -759,7 +811,8 @@ const Home: NextPage = () => {
                                         {/* flow3 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image src='/step_icon_03.png' alt="problem" width={256} height={256}/>
+                                            <img src="step_icon_03.png"alt="problem" width="256" height="256"></img>
+                                            {/* <Image src='/step_icon_03.png' alt="problem" width={256} height={256}/> */}
                                             <div className="flow_area">
                                                 <div className="flow_step">
                                                     <p className="flow_title">
@@ -786,7 +839,8 @@ const Home: NextPage = () => {
                                         {/* flow4 */}
                                         <SplideSlide>
                                         <div className="flow">
-                                            <Image className='mt-5' src='/step_icon_04.png' alt="problem" width={256} height={256}/>
+                                            <img className='mt-5' src="step_icon_04.png"alt="problem" width="256" height="256"></img>
+                                            {/* <Image className='mt-5' src='/step_icon_04.png' alt="problem" width={256} height={256}/> */}
                                             <div className="flow_area">
                                                 <div className='mx-10'>
                                                     <p className="flow_title">
@@ -890,11 +944,10 @@ const Home: NextPage = () => {
             href="https://www.tairaPromote.co.jp/"
             target="_blank"
         >
-            <Image src="/tp_logo.png" alt="tp_logo" width={200} height={100}/>
+            <img src="tp_logo.png"alt="tp_logo" width="200" height="100"></img>
+            {/* <Image src="/tp_logo.png" alt="tp_logo" width={200} height={100}/> */}
         </a>
         </footer>
-        {/* --SATORIタグ-- */}
-        {/* ここに挿入予定。動くのかわからん…。 */}
     </div>
     );
 }
