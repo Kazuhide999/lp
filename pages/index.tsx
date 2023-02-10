@@ -13,6 +13,28 @@ const Home: NextPage = () => {
     const [showModal_4, setShowModal_4] = React.useState(false); 
     return (
     <div className="body">
+        <Script
+            type="text/javascript" 
+            id="_-s-js-_"
+            src="//satori.segs.jp/s.js?c=d924485c"
+        />
+        <Script
+            strategy="afterInteractive"
+            src="https://www.googletagmanager.com/gtag/js?id=UA-52214657-1"
+        />
+        <Script
+            id="gtag-init"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+                __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-52214657-1');
+                `,
+            }}
+        />
         <Head>
             <title>「伴走型」課題解決サービス | マニュアル制作と動画制作の平プロモート</title>
             <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"></link>
@@ -20,28 +42,6 @@ const Home: NextPage = () => {
             <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/72x72.png"></link>
             <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/114x114.png"></link>
             <link rel="apple-touch-icon-precomposed" sizes="144x114" href="/images/144x144.png"></link>
-            <Script
-                type="text/javascript" 
-                id="_-s-js-_"
-                src="//satori.segs.jp/s.js?c=d924485c"
-            />
-            <Script
-                strategy="afterInteractive"
-                src="https://www.googletagmanager.com/gtag/js?id=UA-52214657-1"
-            />
-            <Script
-                id="gtag-init"
-                strategy="afterInteractive"
-                dangerouslySetInnerHTML={{
-                    __html: `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', 'UA-52214657-1');
-                    `,
-                }}
-            />
         </Head>
         <div>
             <video className='video'src='lp_title_bg.mp4' autoPlay loop muted playsInline></video>
