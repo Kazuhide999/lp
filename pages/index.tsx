@@ -69,7 +69,7 @@ const Home: NextPage = () => {
                 <p>
                     <span className='text-blue-800'>「伴走型」</span>課題解決サービス
                 </p>
-                <div className="font-semibold mt-5 text-lg max-lg:text-base max-sm:text-sm">
+                <div className="font-semibold mt-5 text-lg max-lg:text-sm max-sm:text-sm">
                     <p>
                         「企業課題」を、現状把握・課題形成から解決策・運用方法・定着化まで
                     </p>
