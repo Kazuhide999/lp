@@ -122,8 +122,7 @@
             linear-gradient(8deg, rgba(255, 255, 255, 0.9) 60%, rgba(129, 129, 129, 0.2) 90%),
             url(../public/section1.jpg);
         background-position: center;
-        background-size: cover;
-        background-size: 80%;
+        background-repeat: no-repeat;
 
         @apply
         w-full
@@ -142,9 +141,7 @@
             linear-gradient(125deg, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0.6) 85%),
             url(../public/section3.jpg);
         background-position: left;
-        background-size: cover;
-        background-size: 80%;
-
+        background-repeat: no-repeat;
 
         @apply
         w-full
