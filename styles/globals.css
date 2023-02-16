@@ -117,32 +117,12 @@
 }
 
 @media screen and (max-width: 959px) {
-
-    .containar1{
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-        background-image:
-            linear-gradient(8deg, rgba(255, 255, 255, 0.9) 60%, rgba(129, 129, 129, 0.2) 90%),
-            url(../public/section1.jpg);
-        background-position: center;
-
-        @apply
-        w-full
-        h-auto
-        mx-auto
-        flex-col
-        text-center
-        justify-center
-        bg-white
-        py-16
-    }
-    
     .containar3{
-        clip-path: polygon(100% 100%,100% 20%,0% 0%,0% 100%);
+        /* clip-path: polygon(100% 100%,100% 20%,0% 0%,0% 100%);
         background-image:
             linear-gradient(125deg, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 0.6) 85%),
             url(../public/section3.jpg);
-        background-position: left;
-
+        background-position: left; */
         @apply
         w-full
         mx-auto
