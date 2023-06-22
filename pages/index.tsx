@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 // import Image from 'next/image'
 import React from 'react'
-import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/splide/css'
 import Script from 'next/script';
 
@@ -14,6 +13,23 @@ const Home: NextPage = () => {
             id="_-s-js-_"
             src="//satori.segs.jp/s.js?c=d924485c"
         />
+        <Script
+            strategy="afterInteractive"
+            src="https://www.googletagmanager.com/gtag/js?id=UA-52214657-1"
+        />
+        <Script
+            id="gtag-init"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+                __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-52214657-1');
+                `,
+            }}
+        />
         <Head>
             <title>車両保守管理 アプリケーション | マニュアル制作と動画制作の平プロモート</title>
             <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"></link>
@@ -23,7 +39,7 @@ const Home: NextPage = () => {
             <link rel="apple-touch-icon-precomposed" sizes="144x114" href="/images/144x144.png"></link>
         </Head>
         <div>
-            <video className='video'src='test.mp4' autoPlay loop muted playsInline></video>
+            <video className='video'src='Test.mp4' autoPlay loop muted playsInline></video>
             <div className="mv_txt">
                 <p className='p-4'>
                     <span className='lg:p-2'>効率的な</span>
