@@ -70,7 +70,7 @@ const Home: NextPage = () => {
                     複数の鉄道運行会社様との接点を持たせていただく中で、共通課題であると捉えたのが車両検査周辺業務の効率化です。
                 </p>
                 <p>
-                    ヒアリング情報をもとにした現状と、これを解決するアプリケーションをご紹介させていただきます。
+                    各社様とのヒアリング情報をもとにした現状から、これを解決するアプリケーションをご紹介いたします。
                 </p>                
             </div>
         </div>
@@ -99,56 +99,74 @@ const Home: NextPage = () => {
             </div>
         </div>
         {/* section_2 */}
-        <div className="containar2 py-6">
+        <div className="containar2">
             <div className="cont2_title">
                 <p>
-                    車両保守管理{" "}<span className='text-3xl max-lg:text-3xl'>アプリケーションで{" "}</span><span className='text-red-300'>効率化</span>
+                    車両保守管理{" "}<span className='text-3xl max-lg:text-3xl'>DXによる{" "}</span><span className='text-red-300'>効率化</span>
                 </p>
             </div>
-            <div className="grid grid-cols-3 w-2/3 mx-auto text-center text-white mt-20">
-                <div className='p-5 m-5 w-90 h-52 rounded-md'>
-                    <p className='text-2xl font-bold text-blue-200'>
-                        スケジュールの視える化
-                    </p>
-                    <p className='mt-3 text-center mx-auto'>
-                        あああああああああああああああああああああああああああああああああああああああああああああ
-                    </p>
-                </div>
-                <div className='p-5 m-5 w-90 h-52 rounded-full mt-44'>
-                    <p className='text-2xl font-bold text-blue-200'>
-                        検査記録を、ペーパーレス化
-                    </p>
-                    <p className='mt-3 text-center mx-auto'>
-                        あああああああああああああああああああああああああああああああああああああああああああああ
-                    </p>
-                </div>
-                <div className='p-5 m-5 w-90 h-52 rounded-md'>
-                    <p className='text-2xl font-bold text-blue-200'>
-                        電子承認化
-                    </p>
-                    <p className='w-80 mt-3 text-center mx-auto'>
-                        あああああああああああああああああああああああああああああああああああああああああああああ
-                    </p>
-                </div>
-                <div className='p-5 m-5 w-90 h-52 rounded-md -mt-28'>
-                    <p className='text-2xl font-bold text-blue-200'>
-                        管理の簡略化
-                    </p>
-                    <p className='w-80 mt-3 text-center mx-auto'>
-                        あああああああああああああああああああああああああああああああああああああああああああああ
-                    </p>
-                </div>
+            <div className="flex flex-col mx-auto items-center text-center justify-center text-white mt-20">
                 <div>
-                    {/* 不要 */}
+                    <div className='flex p-10 items-center mx-auto'>
+                        <div className='flex'>
+                            <div>
+                                <img src="database.svg"alt="database"width="125" height="125"></img>
+                            </div>
+                            <div className='flex flex-col w-96 ml-5'>                        
+                                <p className='text-2xl font-bold text-blue-200'>
+                                    検査記録のペーパーレス化
+                                </p>
+                                <p className='mt-3 text-center mx-auto'>
+                                    ペーパレスによる環境への貢献、紙媒体にまつわるコスト削減はもちろんのこと、データ管理によって検索性の向上が図れ、かつ編成毎の検査実施日の一覧管理も実現します。
+                                </p>
+                            </div>
+                        </div>
+                        <div className='flex ml-10'>
+                            <div>
+                                <img src="schedule.svg"alt="schedule"width="125" height="125"></img>
+                            </div>
+                            <div className='flex flex-col w-96 ml-5'>
+                                <p className='text-2xl font-bold text-blue-200'>
+                                    スケジュールと進捗の視える化
+                                </p>
+                                <p className='mt-3 text-center mx-auto'>
+                                    時間を要している検査、時間的な余裕がある期間などをすばやく特定することで効率的な保守管理を実現します。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className='p-5 m-5 w-90 h-52 rounded-md justify-end -mt-28'>
-                    <p className='text-2xl font-bold text-blue-200'>
-                        承認申請、承認待ち時間の解消
-                    </p>
-                    <p className='w-80 mt-3 text-center mx-auto'>
-                        あああああああああああああああああああああああああああああああああああああああああああああ
-                    </p>
-                </div>                     
+
+                <div>
+                    <div className='flex p-10 items-center mx-auto'>
+                        <div className='flex'>
+                            <div>
+                                <img src="search.svg"alt="search"width="125" height="125"></img>
+                            </div>
+                            <div className='flex flex-col w-96 ml-5'>                        
+                                <p className='text-2xl font-bold text-blue-200'>
+                                    スケジュール管理の簡略化
+                                </p>
+                                <p className='mt-3 text-center mx-auto'>
+                                    検査実施日を基に次回の検査スケジュール案をシステム側より提示します。
+                                </p>
+                            </div>
+                        </div>
+                        <div className='flex ml-10'>
+                            <div>
+                                <img src="check.svg"alt="check"width="125" height="125"></img>
+                            </div>
+                            <div className='flex flex-col w-96 ml-5'>
+                                <p className='text-2xl font-bold text-blue-200'>
+                                    電子承認化
+                                </p>
+                                <p className='mt-3 text-center mx-auto'>
+                                    承認申請のための移動、および承認待ち時間を削減します。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>               
             </div>
         </div>
         {/* section_3 */}
@@ -169,7 +187,7 @@ const Home: NextPage = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
                             </svg>
                         </div>
-                        実際の作業確認や現物での検討作業を当社スタッフが行うことで、お客様と同じ目線で企画制作にあたります。
+                        お客様の発展・成果に貢献すべく、企画・提案・制作・運用のサイクルを伴走いたします。
                     </li>
                     <li className='mt-5 flex items-center space-x-3'>
                         <div>
@@ -185,7 +203,7 @@ const Home: NextPage = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
                             </svg>
                         </div>
-                        お客様の発展・成果に貢献すべく、企画・提案・制作・運用のサイクルを伴走いたします。
+                        実際の作業確認や現物での検討作業を当社スタッフが行うことで、お客様と同じ目線で企画制作にあたります。
                     </li>
                 </div>
             </div>

@@ -4,7 +4,6 @@
 
 
 .body{
-    /* background-color: rgb(36, 36, 36, 1); */
     @apply
     text-white
     bg-black
@@ -49,7 +48,6 @@
 }
 
 .containar0{
-    /* background-color: rgb(36, 36, 36, 1); */
     @apply
     w-full
     h-auto
@@ -68,12 +66,6 @@
         url(../public/tetudo_2.jpg);
     background-position: center;
     background-size: cover;
-    /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    background-image:
-        linear-gradient(-5deg, rgba(36, 36, 36, 1) 30%,rgba(36, 36, 36, 0.6) 50%, rgba(36, 36, 36, 1) 80%, rgba(36, 36, 36, 1) 100%),
-        url(../public/tetudo_2.jpg);
-    background-position: center;
-    background-size: cover; */
     @apply
     w-full
     h-auto
@@ -99,6 +91,7 @@
     @apply
     text-white 
     flex
+    text-center
     justify-center
     text-4xl
     font-semibold
@@ -112,13 +105,6 @@
         url(../public/tetudo_1.jpg);
     background-position: left;
     background-size: cover;
-    /* clip-path: polygon(100% 100%,100% 20%,0% 0%,0% 100%);
-    background-image:
-        linear-gradient(7deg, rgb(36, 36, 36, 1) 20%,rgba(36, 36, 36, 0.4) 40%, rgba(36, 36, 36, 1) 60%, rgba(36, 36, 36, 1) 100%),
-        url(../public/tetudo_1.jpg);
-    background-position: left;
-    background-size: cover; */
-
     @apply
     w-full
     mx-auto
@@ -158,7 +144,6 @@
 /* _____Footer____ */
 
 .footer{
-    /* background-color: rgb(36, 36, 36, 1); */
     @apply
     flex
     h-32
