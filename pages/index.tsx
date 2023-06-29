@@ -67,10 +67,10 @@ const Home: NextPage = () => {
             </div>
             <div className='text-white text-mb'>
                 <p>
-                    複数の鉄道運行会社様との接点を持たせていただく中で、共通課題であると捉えたのが車両検査周辺業務の効率化です。
+                    今、鉄道会社の共通課題として挙がっているのが車両検査業務の効率化です。
                 </p>
                 <p>
-                    各社様とのヒアリング情報をもとにした現状を解決するアプリケーションをご紹介いたします。
+                    多くの鉄道会社の課題をヒアリングした当社が、この課題を一気に解決するアプリをご提案します。
                 </p>                
             </div>
         </div>
@@ -102,7 +102,7 @@ const Home: NextPage = () => {
         <div className="containar2">
             <div className="cont2_title">
                 <p>
-                    車両保守管理{" "}<span className='text-3xl max-lg:text-3xl'>DXによる{" "}</span><span className='text-red-300'>効率化</span>
+                    車両保守管理DX{" "}<span className='text-3xl max-lg:text-3xl'>による{" "}</span><span className='text-red-300'>効率化</span>
                 </p>
             </div>
             <div className="flex flex-col mx-auto items-center text-center justify-center text-white mt-20">
