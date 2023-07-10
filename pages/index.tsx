@@ -39,7 +39,7 @@ const Home: NextPage = () => {
             <link rel="apple-touch-icon-precomposed" sizes="144x114" href="/images/144x144.png"></link>
         </Head>
         <div>
-            <video className='video'src='Test.mp4' autoPlay loop muted playsInline></video>
+            <video className='video'src='iStock-670484906.mp4' autoPlay loop muted playsInline></video>
             <div className="mv_txt">
                 <p className='p-4'>
                     <span className='lg:p-2'>効率的な</span>
@@ -61,11 +61,11 @@ const Home: NextPage = () => {
         {/* section_0 */}
         <div className="containar0 flex flex-col">
             <div>
-                <p className='text-white text-4xl font-bold mb-5'>
+                <p className='text-white text-4xl  max-lg:text-3xl font-bold mb-5'>
                     <span className="text-blue-200">車両検査にまつわる情報受け渡しの運用手法</span>は万全でしょうか。
                 </p>
             </div>
-            <div className='text-white text-mb'>
+            <div className='text-white text-mb max-lg:text-sm max-lg:w-9/12 mx-auto'>
                 <p>
                     今、鉄道会社の共通課題として挙がっているのが車両検査業務の効率化です。
                 </p>
@@ -81,18 +81,23 @@ const Home: NextPage = () => {
                     車両保守管理 アプリケーション
                 </p>
             </div>
-            <div>
+            <div className='max-lg:w-9/12 mx-auto'>
                 <p className="mb-2">
-                    <span className="text-xl font-bold border-b">車両検査周辺業務</span>{" "}の{" "} 
-                    <span className="text-xl font-bold border-b">生産性</span>{" "}を{" "}  
-                    <span className="text-xl font-bold border-b">最大化</span>{" "}することによって、
+                    <span className="text-xl max-lg:text-lg font-bold border-b">車両検査周辺業務</span>
+                    <span className='max-lg:text-sm'>{" "}の{" "}</span>
+                    <span className="text-xl max-lg:text-lg font-bold border-b">生産性</span>
+                    <span className='max-lg:text-sm'>{" "}を{" "}</span>  
+                    <span className="text-xl max-lg:text-lg font-bold border-b">最大化</span>
+                    <span className='max-lg:text-sm'>{" "}することによって、</span> 
                 </p>
                 <p className="mb-2">
-                    <span className="text-xl font-bold border-b">コスト削減</span>{" "}や{" "}
-                    <span className="text-xl font-bold border-b">より質の高い労働時間</span>{" "}へ充当することができます。
+                    <span className="text-xl max-lg:text-lg font-bold border-b">コスト削減</span>
+                    <span className='max-lg:text-sm'>{" "}や{" "}</span>
+                    <span className="text-xl max-lg:text-lg font-bold border-b">より質の高い労働時間</span>
+                    <span className='max-lg:text-sm'>{" "}へ充当することができます。</span>
                 </p>
             </div>
-            <div className='flex items-center max-xl:flex-col mx-auto mt-10 mb-44'>
+            <div className='flex items-center max-xl:flex-col mx-auto mt-10 mb-44 max-lg:mb-10'>
                 <div>
                     <img src="鉄道App.svg"alt="service"width="1200" height="1200"></img>
                 </div>
@@ -102,34 +107,34 @@ const Home: NextPage = () => {
         <div className="containar2">
             <div className="cont2_title">
                 <p>
-                    車両保守管理DX{" "}<span className='text-3xl max-lg:text-3xl'>による{" "}</span><span className='text-red-300'>効率化</span>
+                    車両保守管理DX{" "}<span className='text-3xl max-lg:text-2xl'>による{" "}</span><span className='text-red-300'>効率化</span>
                 </p>
             </div>
-            <div className="flex flex-col mx-auto items-center text-center justify-center text-white mt-20">
+            <div className="flex flex-col mx-auto items-center text-center justify-center text-white mt-20 max-lg:mt-5">
                 <div>
-                    <div className='flex p-10 items-center mx-auto'>
-                        <div className='flex'>
-                            <div>
-                                <img src="database.svg"alt="database"width="125" height="125"></img>
+                    <div className='flex p-10 items-center mx-auto max-lg:flex-col max-lg:p-0'>
+                        <div className='flex max-lg:p-10'>
+                            <div className='max-lg:w-1/3'>
+                                <img src="database.svg" alt="database" width="125" height="125"></img>
                             </div>
-                            <div className='flex flex-col w-96 ml-5'>                        
-                                <p className='text-2xl font-bold text-blue-200'>
+                            <div className='flex flex-col w-96 ml-5 max-lg:w-48'>                        
+                                <p className='text-2xl font-bold text-blue-200 max-lg:text-lg'>
                                     検査記録のペーパーレス化
                                 </p>
-                                <p className='mt-3 text-center mx-auto'>
+                                <p className='mt-3 text-center mx-auto max-lg:text-sm'>
                                     ペーパレスによる環境への貢献、紙媒体にまつわるコスト削減はもちろんのこと、データ管理によって検索性の向上が図れ、かつ編成毎の検査実施日の一覧管理も実現します。
                                 </p>
                             </div>
                         </div>
-                        <div className='flex ml-10'>
+                        <div className='flex ml-10 max-lg:ml-0'>
                             <div>
-                                <img src="schedule.svg"alt="schedule"width="125" height="125"></img>
+                                <img src="schedule.svg" alt="schedule" width="125" height="125"></img>
                             </div>
-                            <div className='flex flex-col w-96 ml-5'>
-                                <p className='text-2xl font-bold text-blue-200'>
+                            <div className='flex flex-col w-96 ml-5 max-lg:w-48'>
+                                <p className='text-2xl font-bold text-blue-200 max-lg:text-lg'>
                                     スケジュールと進捗の視える化
                                 </p>
-                                <p className='mt-3 text-center mx-auto'>
+                                <p className='mt-3 text-center mx-auto max-lg:text-sm'>
                                     時間を要している検査、時間的な余裕がある期間などをすばやく特定することで効率的な保守管理を実現します。
                                 </p>
                             </div>
@@ -138,29 +143,29 @@ const Home: NextPage = () => {
                 </div>
 
                 <div>
-                    <div className='flex p-10 items-center mx-auto'>
-                        <div className='flex'>
+                    <div className='flex p-10 items-center mx-auto max-lg:flex-col max-lg:p-0'>
+                        <div className='flex max-lg:p-10'>
                             <div>
-                                <img src="search.svg"alt="search"width="125" height="125"></img>
+                                <img src="search.svg" alt="search" width="125" height="125"></img>
                             </div>
-                            <div className='flex flex-col w-96 ml-5'>                        
-                                <p className='text-2xl font-bold text-blue-200'>
+                            <div className='flex flex-col w-96 ml-5 max-lg:w-48'>                        
+                                <p className='text-2xl font-bold text-blue-200 max-lg:text-lg'>
                                     スケジュール管理の簡略化
                                 </p>
-                                <p className='mt-3 text-center mx-auto'>
+                                <p className='mt-3 text-center mx-auto max-lg:text-sm'>
                                     検査実施日を基に次回の検査スケジュール案をシステム側より提示します。
                                 </p>
                             </div>
                         </div>
-                        <div className='flex ml-10'>
+                        <div className='flex ml-10 max-lg:ml-0'>
                             <div>
-                                <img src="check.svg"alt="check"width="125" height="125"></img>
+                                <img src="check.svg" alt="check" width="125" height="125"></img>
                             </div>
-                            <div className='flex flex-col w-96 ml-5'>
-                                <p className='text-2xl font-bold text-blue-200'>
+                            <div className='flex flex-col w-96 ml-5 max-lg:w-48'>
+                                <p className='text-2xl font-bold text-blue-200 max-lg:text-lg'>
                                     電子承認化
                                 </p>
-                                <p className='mt-3 text-center mx-auto'>
+                                <p className='mt-3 text-center mx-auto max-lg:text-sm'>
                                     承認申請のための移動、および承認待ち時間を削減します。
                                 </p>
                             </div>
@@ -176,12 +181,12 @@ const Home: NextPage = () => {
                     Taira{' '}Promote{' '}を選ぶメリット
                 </p>
                 <p>
-                    <span className="text-base max-md:text-sm">～創業以来私たちが取り組んできたのは「伝える」ための仕組みづくりです～</span>
+                    <span className="text-base max-md:text-xs">～創業以来私たちが取り組んできたのは「伝える」ための仕組みづくりです～</span>
                 </p>
             </div>
             <div className='cont3_text'>
                 <div className='list-disc pt-5'>
-                    <li className='mt-5 flex items-center space-x-3'>
+                    <li className='mt-5 flex items-center space-x-3 '>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="w-10 h-10 mr-3 stroke-blue-200">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
