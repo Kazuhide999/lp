@@ -83,17 +83,17 @@ const Home: NextPage = () => {
             </div>
             <div className='max-lg:w-9/12 mx-auto'>
                 <p className="mb-2">
-                    <span className="text-xl max-lg:text-lg font-bold border-b">車両検査周辺業務</span>
+                    <span className="text-xl max-lg:text-md font-bold border-b">車両検査周辺業務</span>
                     <span className='max-lg:text-sm'>{" "}の{" "}</span>
-                    <span className="text-xl max-lg:text-lg font-bold border-b">生産性</span>
+                    <span className="text-xl max-lg:text-md font-bold border-b">生産性</span>
                     <span className='max-lg:text-sm'>{" "}を{" "}</span>  
-                    <span className="text-xl max-lg:text-lg font-bold border-b">最大化</span>
+                    <span className="text-xl max-lg:text-md font-bold border-b">最大化</span>
                     <span className='max-lg:text-sm'>{" "}することによって、</span> 
                 </p>
                 <p className="mb-2">
-                    <span className="text-xl max-lg:text-lg font-bold border-b">コスト削減</span>
+                    <span className="text-xl max-lg:text-md font-bold border-b">コスト削減</span>
                     <span className='max-lg:text-sm'>{" "}や{" "}</span>
-                    <span className="text-xl max-lg:text-lg font-bold border-b">より質の高い労働時間</span>
+                    <span className="text-xl max-lg:text-md font-bold border-b">より質の高い労働時間</span>
                     <span className='max-lg:text-sm'>{" "}へ充当することができます。</span>
                 </p>
             </div>
